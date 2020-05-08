@@ -1,0 +1,6 @@
+Backend_Beer\BeerPOJO.class
+org\kristof\Main.class
+module-info.class
+org\kristof\SecondaryController.class
+org\kristof\PrimaryController.class
+org\kristof\App.class
