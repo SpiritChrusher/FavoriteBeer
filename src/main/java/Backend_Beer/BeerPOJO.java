@@ -2,6 +2,9 @@ package Backend_Beer;
 
 import lombok.*;
 
+import com.google.gson.*;
+
+
 @lombok.Data
 public class BeerPOJO {
 
@@ -46,6 +49,69 @@ public class BeerPOJO {
     }
 
     public BeerPOJO(){}
+
+    @Override
+    public String toString() {
+        return "BeerPOJO{" +
+                "name='" + name + '\'' +
+                ", alcohol=" + alcohol +
+                ", quality='" + quality + '\'' +
+                '}';
+    }
+
+
+    //  return new GsonBuilder().setPrettyPrinting().create().toJson(this);
+    
+    
+    
+
+    public String getName() {
+        return name;
+    }
+
+    public Double getAlcohol() {
+        return alcohol;
+    }
+
+    public String[] getTaste() {
+        return taste;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public String[] getType() {
+        return type;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public String getConsumption() {
+        return consumption;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public String getQuality() {
+        return quality;
+    }
+
+    public String[] getAcquisition() {
+        return acquisition;
+    }
+
+    public Double getPackformat() {
+        return packformat;
+    }
+
+    public Double getPrice_value() {
+        return price_value;
+    }
 
     private Double calcutale_pricevalue()
     {

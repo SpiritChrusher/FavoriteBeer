@@ -5,20 +5,21 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+import java.lang.reflect.*;
+import java.lang.Object;
 
 import java.io.IOException;
 
-/**
- * JavaFX App
- */
+
+
+
 public class App extends Application {
 
     private static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"));
+        scene = new Scene(loadFXML("primary"),800, 600);
         stage.setScene(scene);
         stage.show();
     }
