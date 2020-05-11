@@ -8,7 +8,10 @@ import com.google.gson.*;
 @lombok.Data
 public class BeerPOJO {
 
-    private String name;
+
+    public  enum blonde_beers {lager, hop_lager,new_england_ipa, ipa, west_coast_ipa, double_ipa};
+
+    private  String name;
 
     private Double alcohol;
 
@@ -52,11 +55,9 @@ public class BeerPOJO {
 
     @Override
     public String toString() {
-        return "BeerPOJO{" +
-                "name='" + name + '\'' +
+        return "name='" + name + '\'' +
                 ", alcohol=" + alcohol +
-                ", quality='" + quality + '\'' +
-                '}';
+                ", quality='" + quality + '\'';
     }
 
 
