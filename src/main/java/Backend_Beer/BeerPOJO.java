@@ -1,16 +1,20 @@
 package Backend_Beer;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import com.google.gson.*;
-
-
+@AllArgsConstructor
+@NoArgsConstructor
 @lombok.Data
 public class BeerPOJO {
 
+  //  public  enum Blonde_beers {LAGER("lager",1);  hop_lager("hoplager",5);new_england_ipa("newengland",6); ipa("ipa",7); west_coast_ipa("wcipa",8); double_ipa("dipa",10);};
 
-    public  enum blonde_beers {lager, hop_lager,new_england_ipa, ipa, west_coast_ipa, double_ipa};
 
+
+    
     private  String name;
 
     private Double alcohol;
@@ -33,9 +37,9 @@ public class BeerPOJO {
 
     private Double packformat;
 
-    private Double price_value;
+ //   private Double price_value;
 
-    public BeerPOJO(String aname, Double alc, String[] ataste, String aorigin, String[] atype, String amanufacturer,
+  /*  public BeerPOJO(String aname, Double alc, String[] ataste, String aorigin, String[] atype, String amanufacturer,
                     String aconsumption, Integer aprice, String aquality, String[] aacquisition, Double apackformat)
     {
         name = aname;
@@ -52,12 +56,12 @@ public class BeerPOJO {
     }
 
     public BeerPOJO(){}
-
+*/
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
-                ", alcohol=" + alcohol +
-                ", quality='" + quality + '\'';
+        return "name: " + name + '\'' +
+                ", alcohol: " + alcohol +
+                ", quality: " + quality + '\'';
     }
 
 
@@ -65,7 +69,7 @@ public class BeerPOJO {
     
     
     
-
+/*
     public String getName() {
         return name;
     }
@@ -113,9 +117,11 @@ public class BeerPOJO {
     public Double getPrice_value() {
         return price_value;
     }
-
+*/
     private Double calcutale_pricevalue()
     {
+
+
         return 1.0;
     }
 

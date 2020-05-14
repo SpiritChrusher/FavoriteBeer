@@ -5,9 +5,8 @@ module org.kristof {
 
     requires com.google.gson;
 
-   // opens Backend_Beer to com.google.gson;
+//requires slf4j.api;
     opens org.kristof to javafx.fxml;
     exports org.kristof;
-   // exports Backend_Beer;
-    
+
 }

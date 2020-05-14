@@ -20,7 +20,10 @@ public class Person {
         favoritebeers = afavorite;
     }
 
-    public Person(){}
+    public Person(String aname)
+    {
+    name = aname;
+    }
 
 
 }

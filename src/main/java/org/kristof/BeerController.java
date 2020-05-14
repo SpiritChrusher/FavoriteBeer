@@ -3,6 +3,7 @@ package org.kristof;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import Backend_Beer.BeerPOJO;
+import Backend_Beer.Person;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -20,9 +21,17 @@ public class BeerController{
     public Label beertext;
 
     @FXML
+    private Label playername;
+
+    @FXML
     public TextField userentry;
 
     ArrayList<BeerPOJO> masodik = new ArrayList<>();
+
+    public void initdata(String userName) {
+         Person person = new Person(userName);
+      playername.setText("Current user: " + person.getName());
+    }
 
     public void WriteLabel() throws IOException, URISyntaxException {
 
@@ -42,9 +51,9 @@ public class BeerController{
     }
 
     public void onEnter(ActionEvent actionEvent) throws IOException, URISyntaxException {
+
         WriteLabel();
 
-        masodik.stream().map(a -> a.getName()).sorted().forEach(System.out::println);
 
         masodik.stream().filter(a -> a.getName().equals(userentry.getText()));
        //String found = masodik.stream().filter(a -> a.getName().equals(userentry.getText())).toString();
