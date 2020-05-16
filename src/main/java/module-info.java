@@ -4,6 +4,7 @@ module org.kristof {
     requires lombok;
 
     requires com.google.gson;
+    requires org.tinylog.api;
 
 //requires slf4j.api;
     opens org.kristof to javafx.fxml;

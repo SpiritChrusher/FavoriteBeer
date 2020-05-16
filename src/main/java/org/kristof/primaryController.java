@@ -13,15 +13,13 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-//import lombok.extern.slf4j.*;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
+import org.tinylog.Logger;
 import Backend_Beer.BeerPOJO;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
-//@Slf4j
+
 public class primaryController {
 
     @FXML
@@ -56,9 +54,7 @@ public class primaryController {
           Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
-     //       Logger logger = LoggerFactory.getLogger(primaryController.class);
-       //     logger.info("Username is set to {}, loading game scene.", nameSetter.getText());
-          // log.info("Username is set to {}, loading game scene.", nameSetter.getText());
+     Logger.info("Username is set to {}, loading game scene.", nameSetter.getText());
        }
     }
 
