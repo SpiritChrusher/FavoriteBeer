@@ -743,7 +743,7 @@
   {
     "name": "Dreher Bak",
     "alcohol": 7.2,
-    "taste":[ "strong caramel brown beer", "very heavy",],
+    "taste":[ "strong caramel brown beer", "very heavy"],
     "origin": "Hungary",
     "type": ["lager", "Strong lager, BAK"],
     "manufacturer": "Dreher",
@@ -937,7 +937,7 @@
   {
     "name": "Kronnenburg 1664",
     "alcohol": 5.0,
-    "taste":[ "pleasing", slight wheatbeer taste"],
+    "taste":[ "pleasing", "slight wheatbeer taste"],
       "origin": "France",
       "type": ["Ale", "wheatbeer"],
       "manufacturer":"Carlsberg",

@@ -7,21 +7,55 @@ import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import Backend_Beer.BeerPOJO;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
+import javafx.geometry.Insets;
+
+
 
 public class SecondaryController extends  App{
 
+    Stage window;
+    Scene scene;
+    Button button;
+    ComboBox<String> comboBox;
+
     @Override
     public void start(Stage secondary) {
-        secondary.setTitle("CheckBox Experiment 1");
+        window = secondary;
+        window.setTitle("ComboBox Demo");
+        button = new Button("Submit");
 
-        CheckBox checkBox1 = new CheckBox("Green");
+        comboBox = new ComboBox<>();
+        comboBox.getItems().addAll(
+                "Good Will Hunting",
+                "St. Vincent",
+                "Blackhat"
+        );
 
-        HBox hbox = new HBox(checkBox1);
+        comboBox.setPromptText("What is your favorite movie?");
+        button.setOnAction(e -> printMovie());
 
-        Scene scene = new Scene(hbox, 200, 100);
-        secondary.setScene(scene);
-        secondary.show();
+        //ComboBoxes also generate actions if you need to get value instantly
+        comboBox.setOnAction( e -> System.out.println("User selected " + comboBox.getValue()) );
 
+        VBox layout = new VBox(10);
+        layout.setPadding(new Insets(20, 20, 20, 20));
+        layout.getChildren().addAll(comboBox, button);
+
+        scene = new Scene(layout, 300, 250);
+        window.setScene(scene);
+        window.show();
+    }
+
+    private void printMovie(){
+        System.out.println(comboBox.getValue());
     }
 
 

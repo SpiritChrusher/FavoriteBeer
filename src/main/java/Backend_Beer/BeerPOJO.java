@@ -5,9 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@lombok.Data
+//@AllArgsConstructor
+//@NoArgsConstructor
+//@lombok.Data
 public class BeerPOJO {
 
   //  public  enum Blonde_beers {LAGER("lager",1);  hop_lager("hoplager",5);new_england_ipa("newengland",6); ipa("ipa",7); west_coast_ipa("wcipa",8); double_ipa("dipa",10);};
@@ -27,6 +27,50 @@ public class BeerPOJO {
 
     private String manufacturer;
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAlcohol(Double alcohol) {
+        this.alcohol = alcohol;
+    }
+
+    public void setTaste(String[] taste) {
+        this.taste = taste;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public void setType(String[] type) {
+        this.type = type;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public void setConsumption(String consumption) {
+        this.consumption = consumption;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public void setQuality(String quality) {
+        this.quality = quality;
+    }
+
+    public void setAcquisition(String[] acquisition) {
+        this.acquisition = acquisition;
+    }
+
+    public void setPackformat(Double packformat) {
+        this.packformat = packformat;
+    }
+
     private String consumption;
 
     private Integer price;
@@ -39,7 +83,7 @@ public class BeerPOJO {
 
  //   private Double price_value;
 
-  /*  public BeerPOJO(String aname, Double alc, String[] ataste, String aorigin, String[] atype, String amanufacturer,
+    public BeerPOJO(String aname, Double alc, String[] ataste, String aorigin, String[] atype, String amanufacturer,
                     String aconsumption, Integer aprice, String aquality, String[] aacquisition, Double apackformat)
     {
         name = aname;
@@ -56,7 +100,7 @@ public class BeerPOJO {
     }
 
     public BeerPOJO(){}
-*/
+
     @Override
     public String toString() {
         return "name: " + name + '\'' +
@@ -69,7 +113,7 @@ public class BeerPOJO {
     
     
     
-/*
+
     public String getName() {
         return name;
     }
@@ -114,10 +158,6 @@ public class BeerPOJO {
         return packformat;
     }
 
-    public Double getPrice_value() {
-        return price_value;
-    }
-*/
     private Double calcutale_pricevalue()
     {
 

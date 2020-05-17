@@ -7,7 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.lang.reflect.*;
 import java.lang.Object;
-
 import java.io.IOException;
 
 

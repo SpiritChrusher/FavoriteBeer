@@ -1,3 +1,10 @@
-module-info.class
+Backend_Beer\BeerPOJO.class
+Backend_Beer\PersonDAO.class
 org\kristof\SecondaryController.class
 org\kristof\App.class
+Backend_Beer\Beertypes.class
+org\kristof\Main.class
+module-info.class
+Backend_Beer\Person.class
+org\kristof\BeerController.class
+org\kristof\primaryController.class

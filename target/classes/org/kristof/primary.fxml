@@ -7,11 +7,30 @@
 <VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kristof.primaryController">
    <children>
       <Label text="First" />
-      <TextField fx:id="nameSetter" maxWidth="-Infinity" onAction="#onEnter" text="Enter your name" />
-      <Label fx:id="errorLabel" layoutX="223.0" layoutY="200.0" prefHeight="16.0" prefWidth="151.0" textFill="#e30e0e" />
 
+
+      <GridPane hgap="10.0" vgap="10.0" VBox.vgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+
+            <TextField fx:id="nameSetter" maxWidth="-Infinity" onAction="#onEnter" text="Enter your name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Label fx:id="errorLabel" layoutX="223.0" layoutY="200.0" prefHeight="16.0" prefWidth="151.0" textFill="#e30e0e" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#toSecond" text="ToSecond" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+         </children>
+      </GridPane>
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
 </VBox>
+

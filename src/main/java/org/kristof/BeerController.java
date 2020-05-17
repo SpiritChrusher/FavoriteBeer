@@ -29,8 +29,8 @@ public class BeerController{
     ArrayList<BeerPOJO> masodik = new ArrayList<>();
 
     public void initdata(String userName) {
-         Person person = new Person(userName);
-      playername.setText("Current user: " + person.getName());
+        Person person = new Person(userName);
+        playername.setText("Current user: " + person.getName());
     }
 
     public void WriteLabel() throws IOException, URISyntaxException {
@@ -56,10 +56,10 @@ public class BeerController{
 
 
         masodik.stream().filter(a -> a.getName().equals(userentry.getText()));
-       //String found = masodik.stream().filter(a -> a.getName().equals(userentry.getText())).toString();
+        //String found = masodik.stream().filter(a -> a.getName().equals(userentry.getText())).toString();
 
         for (var a: masodik
-             ) {
+        ) {
             if (a.getName().equals(userentry.getText()))
             {
                 beertext.setText(a.toString());
