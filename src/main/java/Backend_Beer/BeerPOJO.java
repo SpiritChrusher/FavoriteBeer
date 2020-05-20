@@ -59,7 +59,7 @@ public class BeerPOJO {
         this.price = price;
     }
 
-    public void setQuality(String quality) {
+    public void setQuality(Double quality) {
         this.quality = quality;
     }
 
@@ -75,7 +75,7 @@ public class BeerPOJO {
 
     private Integer price;
 
-    private String quality;
+    private Double quality;
 
     private String[] acquisition;
 
@@ -84,7 +84,7 @@ public class BeerPOJO {
  //   private Double price_value;
 
     public BeerPOJO(String aname, Double alc, String[] ataste, String aorigin, String[] atype, String amanufacturer,
-                    String aconsumption, Integer aprice, String aquality, String[] aacquisition, Double apackformat)
+                    String aconsumption, Integer aprice, Double aquality, String[] aacquisition, Double apackformat)
     {
         name = aname;
         alcohol = alc;
@@ -110,8 +110,15 @@ public class BeerPOJO {
 
 
     //  return new GsonBuilder().setPrettyPrinting().create().toJson(this);
-    
-    
+    //For testing methods
+    public BeerPOJO(String aname, String[] atype, Double aqauality, Integer aprice)
+    {
+        name = aname;
+        type = atype;
+        quality = aqauality;
+        price = aprice;
+
+    }
     
 
     public String getName() {
@@ -146,7 +153,7 @@ public class BeerPOJO {
         return price;
     }
 
-    public String getQuality() {
+    public Double getQuality() {
         return quality;
     }
 
