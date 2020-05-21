@@ -1,6 +1,9 @@
 package org.kristof;
 
 import java.io.IOException;
+
+import Backend_Beer.Beertypes;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -27,8 +30,8 @@ public class SecondaryController extends  App{
     ComboBox<String> comboBox;
 
     @Override
-    public void start(Stage secondary) {
-        window = secondary;
+    public void start(Stage Search) {
+        window = Search;
         window.setTitle("ComboBox Demo");
         button = new Button("Submit");
 
@@ -40,7 +43,6 @@ public class SecondaryController extends  App{
         );
 
         comboBox.setPromptText("What is your favorite movie?");
-        button.setOnAction(e -> printMovie());
 
         //ComboBoxes also generate actions if you need to get value instantly
         comboBox.setOnAction( e -> System.out.println("User selected " + comboBox.getValue()) );
@@ -53,11 +55,5 @@ public class SecondaryController extends  App{
         window.setScene(scene);
         window.show();
     }
-
-    private void printMovie(){
-        System.out.println(comboBox.getValue());
-    }
-
-
 
 }

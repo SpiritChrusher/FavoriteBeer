@@ -3,8 +3,11 @@ package Backend_Beer;
 public enum BeerTastes
 {
 
-    Smooth("smooth", 10),
+    PLEASING("pleasing", 10),
     EASY_TO_DRINK("easy to drink", 10);
+
+
+
 
     private final String tastename;   // in kilograms
     private final double value; // in meters

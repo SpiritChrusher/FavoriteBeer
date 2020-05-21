@@ -7,11 +7,14 @@ import java.net.URISyntaxException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.tinylog.Logger;
 
@@ -52,7 +55,7 @@ public class primaryController {
             errorLabel.setText("* Username is empty!");
             System.out.println("Empty username!");
         } else {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("secondary.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Search.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
