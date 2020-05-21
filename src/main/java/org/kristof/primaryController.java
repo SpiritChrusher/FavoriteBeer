@@ -60,8 +60,9 @@ public class primaryController {
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
+          //  stage.setTitle("Finder");
 
-            Logger.info("Moving to another page");
+            Logger.info("Moving to {} page", stage.getTitle());
         }
 
     }

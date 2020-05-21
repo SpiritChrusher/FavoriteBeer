@@ -9,7 +9,7 @@ import java.io.IOException;
 public class PersonDAO {
 
 
-    public void WriteToJson(Person p)
+    public static void WriteToJson(Person p)
     {
         Gson gson = new Gson();
 

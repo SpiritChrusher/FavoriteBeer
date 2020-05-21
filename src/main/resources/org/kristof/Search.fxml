@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.kristof.SearchController"
-            prefHeight="800.0" prefWidth="1200.0">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kristof.SearchController">
     <GridPane>
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" prefWidth="600.0" />
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" prefWidth="600.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" prefWidth="300.0" />
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="200.0" prefWidth="600.0" />
             </columnConstraints>
 
             <rowConstraints>
-                <RowConstraints minHeight="10.0" prefHeight="500.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="500.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="300.0" vgrow="SOMETIMES" />
             </rowConstraints>
         <children>
-            <ListView fx:id="listshow" maxHeight="-Infinity" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
-            <ListView fx:id="listchosen" maxHeight="-Infinity" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
-            <Button fx:id="move" text="Move" alignment="CENTER" onAction="#Move" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
-            <Button fx:id="search" text="Search" alignment="CENTER" onAction="#Search" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-            <Label fx:id="found" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" text="your beer will be here soon..."/>
+            <Label fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label fx:id="options" text="Options" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <Label fx:id="selected" text="selected" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <ListView fx:id="listshow" maxHeight="-Infinity" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <ListView fx:id="listchosen" maxHeight="-Infinity" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="move" alignment="CENTER" onAction="#Move" text="Move" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="search" alignment="CENTER_RIGHT" onAction="#Search" text="Search" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="found" alignment="CENTER" text="your beer will be here soon..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <Button fx:id="tobeers"  text="toBeerPage" onAction="#toBeers" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+
         </children>
 
     </GridPane>
