@@ -1,24 +1,30 @@
 package org.kristof;
 
-import java.nio.charset.StandardCharsets;
-import java.nio.file.*;
 import Backend_Beer.BeerPOJO;
 import Backend_Beer.Person;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import com.google.gson.*;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 import java.io.*;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class BeerController{
     @FXML
     public Label beertext;
+
+    @FXML
+    public Button tosearch;
 
     @FXML
     private Label playername;
@@ -29,6 +35,7 @@ public class BeerController{
     ArrayList<BeerPOJO> masodik = new ArrayList<>();
 
     private Person person;
+
     public void initdata(Person p) {
          person = p;
         playername.setText("Current user: " + person.getName());
@@ -36,12 +43,10 @@ public class BeerController{
 
     public void WriteLabel() throws IOException, URISyntaxException {
 
-        var myJson = getClass().getResource("jsons/Mybeers_part.json");
-        var f = new String(Files.readAllBytes(Paths.get(myJson.toURI())), StandardCharsets.UTF_8);
-        System.out.println(myJson);
-        Gson g = new Gson();
-        BeerPOJO[] bj = g.fromJson(f, BeerPOJO[].class);
+        InputStream jsonfile = ClassLoader.getSystemClassLoader().
+                getResourceAsStream("Mybeers_part.json");
 
+        BeerPOJO[] bj = new Gson().fromJson(new InputStreamReader(jsonfile), BeerPOJO[].class);
 
 
         for (var a:bj
@@ -66,7 +71,27 @@ public class BeerController{
                 beertext.setText(a.toString());
             }
         }
+        Gson gson = new Gson();
+        try (FileWriter writer = new FileWriter("jsons/Person.json")) {
+            gson.toJson(person, writer);
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        Logger.info("User's data has been saved to Json file.");
 
 
+    }
+
+    public void tosearch(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Search.fxml"));
+        Parent root = fxmlLoader.load();
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
+        stage.setTitle("Search");
+      //  fxmlLoader.<SearchController>getController().initdata(person);
+        Logger.info("Moving to {} page", stage.getTitle());
     }
 }

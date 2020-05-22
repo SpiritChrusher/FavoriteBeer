@@ -1,21 +1,19 @@
 package org.kristof;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URISyntaxException;
 
 
+import Backend_Beer.BeerPOJO;
 import Backend_Beer.Person;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import com.google.gson.Gson;
 import javafx.event.ActionEvent;
-import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.tinylog.Logger;
 
@@ -52,12 +50,18 @@ public class primaryController {
             Logger.info("Username is set to {}, loading game scene.", nameSetter.getText());
         }
     }
-    public void toSecond(ActionEvent actionEvent) throws IOException {
+    public void toSecond(ActionEvent actionEvent) throws IOException, URISyntaxException {
 
         if (nameSetter.getText().isEmpty()) {
             errorLabel.setText("* Username is empty!");
             System.out.println("Empty username!");
         } else {
+
+            InputStream jsonfile = ClassLoader.getSystemClassLoader().
+                    getResourceAsStream("Mybeers_part.json");
+
+            BeerPOJO[] bj = new Gson().fromJson(new InputStreamReader(jsonfile), BeerPOJO[].class);
+
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Search.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -65,7 +69,9 @@ public class primaryController {
             stage.show();
             stage.setTitle("Finder");
             Person p = new Person(nameSetter.getText());
-            fxmlLoader.<SearchController>getController().initdata(p);
+            fxmlLoader.<SearchController>getController().initdata(p, bj);
+
+
 
             Logger.info("Moving to {} page", stage.getTitle());
         }

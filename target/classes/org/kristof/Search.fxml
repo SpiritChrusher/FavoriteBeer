@@ -23,7 +23,6 @@
             <Label fx:id="selected" text="selected" GridPane.columnIndex="2" GridPane.rowIndex="0" />
             <ListView fx:id="listshow" maxHeight="-Infinity" GridPane.columnIndex="0" GridPane.rowIndex="1" />
             <ListView fx:id="listchosen" maxHeight="-Infinity" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-           
             <Button fx:id="search" alignment="CENTER_RIGHT" onAction="#Search" text="Search" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <Label fx:id="found" alignment="CENTER" text="your beer will be here soon..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
          <Button fx:id="tobeers" onAction="#toBeers" text="toBeerPage" GridPane.columnIndex="2" GridPane.rowIndex="3" />

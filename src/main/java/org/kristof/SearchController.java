@@ -1,10 +1,7 @@
 package org.kristof;
 
-import Backend_Beer.BeerPOJO;
-import Backend_Beer.Beertypes;
+import Backend_Beer.*;
 
-import Backend_Beer.Person;
-import Backend_Beer.PersonDAO;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -23,6 +20,7 @@ import org.tinylog.Logger;
 
 import java.io.IOException;
 import java.lang.reflect.Array;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 
 import java.util.*;
@@ -62,17 +60,16 @@ public class SearchController {
     private final ObservableList<String> chosentastes = FXCollections.observableArrayList();
     private Integer selectedIndex = -1;
 
-ArrayList<String> tasteoptions = new ArrayList<>();
+    ArrayList<String> tasteoptions = new ArrayList<>();
 
 
-    public void initdata(Person p) {
+    public void initdata(Person p, BeerPOJO[] bj) {
         user = p;
-        username.setText("Current user: " + user.getName() );
+        username.setText("Current user: " + user.getName());
 
     }
 
-    public void initialize()
-    {
+    public void initialize() {
 
         populate(listshow);
         listchosen.setItems(chosentastes);
@@ -80,32 +77,34 @@ ArrayList<String> tasteoptions = new ArrayList<>();
     }
 
 
-
     public void populate(ListView a) {
-    ArrayList<String> lista = new ArrayList<>();
 
-    for (var i : Beertypes.values())
-    {
-        lista.add(i.getName());
-    }
-
-    a.getItems().addAll(lista);
+        a.getItems().addAll(BeerPOJO.izek);
 
         Logger.info("Listview is populated");
-}
+    }
 
-    public void Move(ActionEvent actionEvent)
-    {
+    public void Move(ActionEvent actionEvent) {
         chosentastes.add(listshow.getSelectionModel().getSelectedItem().toString());
 
     }
 
-    public void Search(ActionEvent actionEvent) {
+    public void Search(ActionEvent actionEvent) throws IOException, URISyntaxException {
 
-        ArrayList<BeerPOJO> founded = new ArrayList<>();
+        BeerSeacher a = new BeerSeacher();
+        List<String> results = listchosen.getItems();
+        for (var item: results
+             ) {
+            System.out.println(item);
+        }
+        a.Favorite_types(results);
+
+        found.setText(a.Favorite_types(results).toString());
+
+        /*ArrayList<BeerPOJO> founded = new ArrayList<>();
         BeerPOJO foundbeer = new BeerPOJO();
         founded.add(foundbeer);
-    user.setFavoritebeers(founded);
+        user.setFavoritebeers(founded);*/
         Logger.debug("Saving result to the user.");
 
 
@@ -122,14 +121,27 @@ ArrayList<String> tasteoptions = new ArrayList<>();
         stage.setScene(new Scene(root));
         stage.show();
         stage.setTitle("Beers");
-
+        fxmlLoader.<BeerController>getController().initdata(user);
         Logger.info("Moving to {} page", stage.getTitle());
 
     }
 
     public void Clear(ActionEvent actionEvent) {
+
+        listchosen.getItems().clear();
+
     }
 
     public void Remove(ActionEvent actionEvent) {
+        final int selectedIdx = listchosen.getSelectionModel().getSelectedIndex();
+        if (selectedIdx != -1) {
+            String itemToRemove = listchosen.getSelectionModel().getSelectedItem().toString();
+
+            final int newSelectedIdx =
+                    (selectedIdx == listchosen.getItems().size() - 1)
+                            ? selectedIdx - 1
+                            : selectedIdx;
+            listchosen.getItems().remove(selectedIdx); //.getSelectionModel().clearSelection();
+        }
     }
 }
