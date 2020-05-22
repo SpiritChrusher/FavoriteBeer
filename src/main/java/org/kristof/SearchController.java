@@ -58,13 +58,15 @@ public class SearchController {
     private Label found;
 
 
-    Person user = new Person();
+    private Person user;
     private final ObservableList<String> chosentastes = FXCollections.observableArrayList();
     private Integer selectedIndex = -1;
 
 ArrayList<String> tasteoptions = new ArrayList<>();
-    public void initdata(String userName) {
-        user = new Person(userName);
+
+
+    public void initdata(Person p) {
+        user = p;
         username.setText("Current user: " + user.getName() );
 
     }
@@ -123,5 +125,11 @@ ArrayList<String> tasteoptions = new ArrayList<>();
 
         Logger.info("Moving to {} page", stage.getTitle());
 
+    }
+
+    public void Clear(ActionEvent actionEvent) {
+    }
+
+    public void Remove(ActionEvent actionEvent) {
     }
 }

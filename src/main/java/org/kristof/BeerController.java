@@ -28,8 +28,9 @@ public class BeerController{
 
     ArrayList<BeerPOJO> masodik = new ArrayList<>();
 
-    public void initdata(String userName) {
-        Person person = new Person(userName);
+    private Person person;
+    public void initdata(Person p) {
+         person = p;
         playername.setText("Current user: " + person.getName());
     }
 

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 
+import Backend_Beer.Person;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -41,7 +42,9 @@ public class primaryController {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Beer.fxml"));
             Parent root = fxmlLoader.load();
 
-            fxmlLoader.<BeerController>getController().initdata(nameSetter.getText());
+            Person p = new Person(nameSetter.getText());
+            fxmlLoader.<BeerController>getController().initdata(p);
+
             //  App.setRoot("Beer");
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
@@ -60,7 +63,9 @@ public class primaryController {
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
-          //  stage.setTitle("Finder");
+            stage.setTitle("Finder");
+            Person p = new Person(nameSetter.getText());
+            fxmlLoader.<SearchController>getController().initdata(p);
 
             Logger.info("Moving to {} page", stage.getTitle());
         }
