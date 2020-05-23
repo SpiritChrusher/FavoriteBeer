@@ -44,7 +44,7 @@ public class BeerSeacher {
         return ((actual.getQuality()*beerpoints)/actual.getPrice())*100;
     }
 
-    public static ArrayList<BeerPOJO> Favorite_types(List<String> a, BeerPOJO[] bj) throws IOException, URISyntaxException {
+    public static ArrayList<BeerPOJO> Favorite_types(List<String> options, BeerPOJO[] bj) throws IOException, URISyntaxException {
 
 
 
@@ -56,7 +56,7 @@ public class BeerSeacher {
         for (var elem : bj)
         {
             int same = 0;
-            for (var word : a) {
+            for (var word : options) {
 
                 for (var another : elem.getTaste()){
 
@@ -68,7 +68,7 @@ public class BeerSeacher {
                 int tastepiece = elem.getTaste().length;
 
             }
-            if(same >= 2) //same >= chosendb-1 ||
+            if(same >= 2 && same >= options.size()-1)
             {
                 yourbeers.add(elem);
             }
@@ -83,8 +83,7 @@ if (yourbeers.size() == 0)
         return yourbeers;
     }
 
-    public static String Bestbeer(ArrayList<BeerPOJO> yourbeers)
-    {
+    public static String Bestbeer(ArrayList<BeerPOJO> yourbeers) throws IOException, URISyntaxException {
         if(yourbeers.size() > 1) {
             for (var i : yourbeers) {
                 i.calcutale_pricevalue();
@@ -94,9 +93,11 @@ if (yourbeers.size() == 0)
             return best;
         }
 
-        String best = yourbeers.get(BeerSeacher.RandomNumber()).getName();
+        BeerPOJO[] yours = BeerDAO.ReadBeers();
 
-        Logger.warn("The elected otions list didn't match a beer, so I created {}" + best);
+        String best = yours[BeerSeacher.RandomNumber()].getName();
+
+        Logger.warn("The selected options list didn't match a beer, so I created: " + best);
         return best;
     }
 

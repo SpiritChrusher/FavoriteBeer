@@ -32,7 +32,7 @@ public class FavoritesController {
     Person person;
     public void initdata(Person user) {
         person = user;
-        nameLabel.setText("name: {}" + person.getName());
+        nameLabel.setText("name: " + person.getName());
         beerlist.getItems().addAll(person.getFavoritebeers());
     }
 
