@@ -24,7 +24,7 @@
             <TextField fx:id="nameSetter" maxWidth="-Infinity" onAction="#onEnter" text="Enter your name" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
             <Label fx:id="errorLabel" layoutX="223.0" layoutY="200.0" prefHeight="16.0" prefWidth="151.0" textFill="#e30e0e" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
 
-            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#toSecond" text="ToSecond" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <Button maxWidth="100" mnemonicParsing="false" onAction="#toSecond" text="ToSecond" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
 
          </children>
       </GridPane>

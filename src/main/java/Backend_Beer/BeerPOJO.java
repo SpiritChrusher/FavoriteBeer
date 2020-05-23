@@ -119,7 +119,8 @@ public class BeerPOJO {
         price = aprice;
 
     }
-    
+
+    public BeerPOJO(){}
 
     public String getName() {
         return name;
@@ -165,15 +166,12 @@ public class BeerPOJO {
         return packformat;
     }
 
-    private Double calcutale_pricevalue()
-    {
-
-
-        return 1.0;
-    }
+    public Double calcutale_pricevalue()
+    {return BeerSeacher.Price_value(this);}
 
     public static final String[] izek= {"hoppybitter aftertaste",
             "malty",
+            "pleasing" ,
             "not strong",
             "soft",
             "alcohol" ,
@@ -243,7 +241,6 @@ public class BeerPOJO {
             "pleasing summer beer" ,
             "pleasing taste" ,
             "pleasing wheatbeer" ,
-            "pleasing" ,
             "rasberry syrup" ,
             "refreshing" ,
             "roasted aftertaste" ,
@@ -269,8 +266,7 @@ public class BeerPOJO {
             "slightly smoky" ,
             "slightly sour" ,
             "slightly stout taste" ,
-            "slightly stoutos" ,
-            "slightly sweet" ,
+            "slightly stout" ,
             "slightly sweet" ,
             "slightly tea taste" ,
             "slightly went wrong" ,
@@ -300,7 +296,6 @@ public class BeerPOJO {
             "vegyes taste" ,
             "very bad" ,
             "very bitter" ,
-            "very bitter" ,
             "very coffee taste" ,
             "very gassy" ,
             "very heavy" ,
@@ -309,7 +304,7 @@ public class BeerPOJO {
             "very mint" ,
             "very sour aftertaste" ,
             "very strong" ,
-            "verywet" ,
+            "very wet" ,
             "vomit aftertaste" ,
             "weak taste" ,
             "wheatbeer taste" ,
@@ -331,7 +326,6 @@ public class BeerPOJO {
             "light lager" ,
             "moderately bitter" ,
             "moderately pleasing" ,
-            "pleasing" ,
             "riesling taste" ,
             "simple" ,
             "slight bitter aftertaste" ,
@@ -384,7 +378,6 @@ public class BeerPOJO {
             "pleasing pils type" ,
             "pleasing sour-cherry taste" ,
             "pleasing taste" ,
-            "pleasing" ,
             "raw hoppy taste" ,
             "raw" ,
             "roasted" ,

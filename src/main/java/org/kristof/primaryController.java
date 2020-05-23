@@ -55,13 +55,8 @@ public class primaryController {
         if (nameSetter.getText().isEmpty()) {
             errorLabel.setText("* Username is empty!");
             System.out.println("Empty username!");
-        } else {
-
-            InputStream jsonfile = ClassLoader.getSystemClassLoader().
-                    getResourceAsStream("Mybeers_part.json");
-
-            BeerPOJO[] bj = new Gson().fromJson(new InputStreamReader(jsonfile), BeerPOJO[].class);
-
+        }
+        else {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Search.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -69,7 +64,7 @@ public class primaryController {
             stage.show();
             stage.setTitle("Finder");
             Person p = new Person(nameSetter.getText());
-            fxmlLoader.<SearchController>getController().initdata(p, bj);
+            fxmlLoader.<SearchController>getController().initdata(p);
 
 
 

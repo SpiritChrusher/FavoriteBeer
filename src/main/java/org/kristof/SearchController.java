@@ -27,6 +27,8 @@ import java.util.*;
 
 public class SearchController {
 
+    @FXML
+    private Button tofavorites;
 
     @FXML
     private Button tobeers;
@@ -62,8 +64,9 @@ public class SearchController {
 
     ArrayList<String> tasteoptions = new ArrayList<>();
 
+    ArrayList<BeerPOJO> founded = new ArrayList<>();
 
-    public void initdata(Person p, BeerPOJO[] bj) {
+    public void initdata(Person p){
         user = p;
         username.setText("Current user: " + user.getName());
 
@@ -91,20 +94,23 @@ public class SearchController {
 
     public void Search(ActionEvent actionEvent) throws IOException, URISyntaxException {
 
-        BeerSeacher a = new BeerSeacher();
-        List<String> results = listchosen.getItems();
-        for (var item: results
-             ) {
-            System.out.println(item);
+        List<String> consultations = listchosen.getItems();
+        ArrayList<String> showing;
+        if (consultations instanceof ArrayList<?>) {
+            showing = (ArrayList<String>) consultations;
+        } else {
+            showing = new ArrayList<>(consultations);
         }
-        a.Favorite_types(results);
 
-        found.setText(a.Favorite_types(results).toString());
 
-        /*ArrayList<BeerPOJO> founded = new ArrayList<>();
+
+
+        found.setText(BeerSeacher.Bestbeer(BeerSeacher.Favorite_types(showing, BeerDAO.ReadBeers())));
+
+
         BeerPOJO foundbeer = new BeerPOJO();
         founded.add(foundbeer);
-        user.setFavoritebeers(founded);*/
+        user.setFavoritebeers(founded);
         Logger.debug("Saving result to the user.");
 
 
@@ -143,5 +149,18 @@ public class SearchController {
                             : selectedIdx;
             listchosen.getItems().remove(selectedIdx); //.getSelectionModel().clearSelection();
         }
+    }
+
+    public void tofavorites(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Favorites.fxml"));
+        Parent root = fxmlLoader.load();
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
+        stage.setTitle("Favorites");
+        fxmlLoader.<FavoritesController>getController().initdata(user);
+        Logger.info("Moving to {} page", stage.getTitle());
+
     }
 }

@@ -25,17 +25,6 @@ public class PersonDAO {
         Logger.info("User's data has been saved to Json file.");
     }
 
-    public static void test() throws IOException {
-        String fileName = "Mybeers_part.json";
-        ClassLoader classLoader = new PersonDAO().getClass().getClassLoader();
 
-        File file = new File(classLoader.getResource(fileName).getFile());
-
-        System.out.println("File Found : " + file.exists());
-
-        //Read File Content
-        String content = new String(Files.readAllBytes(file.toPath()));
-        System.out.println(content);
-    }
 
 }

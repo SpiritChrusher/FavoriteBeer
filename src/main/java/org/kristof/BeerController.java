@@ -1,5 +1,6 @@
 package org.kristof;
 
+import Backend_Beer.BeerDAO;
 import Backend_Beer.BeerPOJO;
 import Backend_Beer.Person;
 import javafx.event.ActionEvent;
@@ -18,6 +19,8 @@ import org.tinylog.Logger;
 import java.io.*;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class BeerController{
     @FXML
@@ -32,7 +35,7 @@ public class BeerController{
     @FXML
     public TextField userentry;
 
-    ArrayList<BeerPOJO> masodik = new ArrayList<>();
+    ArrayList<BeerPOJO> beers = new ArrayList<>();
 
     private Person person;
 
@@ -41,7 +44,7 @@ public class BeerController{
         playername.setText("Current user: " + person.getName());
     }
 
-    public void WriteLabel() throws IOException, URISyntaxException {
+  /*  public void WriteLabel() throws IOException, URISyntaxException {
 
         InputStream jsonfile = ClassLoader.getSystemClassLoader().
                 getResourceAsStream("Mybeers_part.json");
@@ -54,32 +57,25 @@ public class BeerController{
             masodik.add(a);
         }
 
-    }
+    }*/
 
     public void onEnter(ActionEvent actionEvent) throws IOException, URISyntaxException {
 
-        WriteLabel();
+      BeerPOJO[] allbeers = BeerDAO.ReadBeers();
+        Stream<BeerPOJO> beerstream = Arrays.stream(allbeers, 0, allbeers.length-1);
 
-
-        masodik.stream().filter(a -> a.getName().equals(userentry.getText()));
+        beertext.setText(beerstream.filter(a -> a.getName().equals(userentry.getText())).findFirst().get().toString());
         //String found = masodik.stream().filter(a -> a.getName().equals(userentry.getText())).toString();
 
-        for (var a: masodik
+    /*    for (var a: masodik
         ) {
             if (a.getName().equals(userentry.getText()))
             {
                 beertext.setText(a.toString());
             }
         }
-        Gson gson = new Gson();
-        try (FileWriter writer = new FileWriter("jsons/Person.json")) {
-            gson.toJson(person, writer);
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
+*/
         Logger.info("User's data has been saved to Json file.");
-
 
     }
 
@@ -91,7 +87,7 @@ public class BeerController{
         stage.setScene(new Scene(root));
         stage.show();
         stage.setTitle("Search");
-      //  fxmlLoader.<SearchController>getController().initdata(person);
+        fxmlLoader.<SearchController>getController().initdata(person);
         Logger.info("Moving to {} page", stage.getTitle());
     }
 }

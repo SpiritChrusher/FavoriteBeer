@@ -1,6 +1,7 @@
 package Backend_Beer;
 
 import com.google.gson.Gson;
+import org.tinylog.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,9 +11,20 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class BeerSeacher {
+
+    public static int RandomNumber()
+    {
+      //  int randomNum = ThreadLocalRandom.current().nextInt(0, 170 + 1);
+
+
+        return ThreadLocalRandom.current().nextInt(0, 170 + 1);
+    }
+
 
     public static double Price_value(BeerPOJO actual)
     {
@@ -32,32 +44,33 @@ public class BeerSeacher {
         return ((actual.getQuality()*beerpoints)/actual.getPrice())*100;
     }
 
-    public ArrayList<BeerPOJO> Favorite_types(List<String> a) throws IOException, URISyntaxException {
+    public static ArrayList<BeerPOJO> Favorite_types(List<String> a, BeerPOJO[] bj) throws IOException, URISyntaxException {
 
 
-        InputStream jsonfile = ClassLoader.getSystemClassLoader().
-                getResourceAsStream("Mybeers_part.json");
 
-        BeerPOJO[] bj = new Gson().fromJson(new InputStreamReader(jsonfile), BeerPOJO[].class);
+
+
         ArrayList<BeerPOJO> yourbeers = new ArrayList<>();
 
-        Integer chosendb = a.size();
-        for (var word : a)
+
+        for (var elem : bj)
         {
-            for (var elem: bj) {
-                int same = 0;
-                for (var another: elem.getTaste())
-                {
+            int same = 0;
+            for (var word : a) {
+
+                for (var another : elem.getTaste()){
+
                     if (word.equals(another))
                     {
                         same++;
                     }
                 }
                 int tastepiece = elem.getTaste().length;
-                if(same >= chosendb-1 || same >= 2)
-                {
-                    yourbeers.add(elem);
-                }
+
+            }
+            if(same >= 2) //same >= chosendb-1 ||
+            {
+                yourbeers.add(elem);
             }
 
         }
@@ -68,6 +81,23 @@ if (yourbeers.size() == 0)
 }
 
         return yourbeers;
+    }
+
+    public static String Bestbeer(ArrayList<BeerPOJO> yourbeers)
+    {
+        if(yourbeers.size() > 1) {
+            for (var i : yourbeers) {
+                i.calcutale_pricevalue();
+            }
+
+            var best = yourbeers.stream().max(Comparator.comparingDouble(BeerPOJO::calcutale_pricevalue)).get().getName();
+            return best;
+        }
+
+        String best = yourbeers.get(BeerSeacher.RandomNumber()).getName();
+
+        Logger.warn("The elected otions list didn't match a beer, so I created {}" + best);
+        return best;
     }
 
 }

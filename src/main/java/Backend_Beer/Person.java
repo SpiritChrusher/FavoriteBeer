@@ -12,8 +12,6 @@ public class Person {
 
     private String[] taste;
 
-    private Integer age;
-
     private ArrayList<BeerPOJO> favoritebeers;
 
     public Person(){}
@@ -53,11 +51,4 @@ public class Person {
         this.favoritebeers = favoritebeers;
     }
 
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 }
