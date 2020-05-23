@@ -35,29 +35,13 @@ public class BeerController{
     @FXML
     public TextField userentry;
 
-    ArrayList<BeerPOJO> beers = new ArrayList<>();
 
     private Person person;
 
     public void initdata(Person p) {
          person = p;
-        playername.setText("Current user: " + person.getName());
+        playername.setText("User: " + person.getName());
     }
-
-  /*  public void WriteLabel() throws IOException, URISyntaxException {
-
-        InputStream jsonfile = ClassLoader.getSystemClassLoader().
-                getResourceAsStream("Mybeers_part.json");
-
-        BeerPOJO[] bj = new Gson().fromJson(new InputStreamReader(jsonfile), BeerPOJO[].class);
-
-
-        for (var a:bj
-        ) {
-            masodik.add(a);
-        }
-
-    }*/
 
     public void onEnter(ActionEvent actionEvent) throws IOException, URISyntaxException {
 
@@ -65,16 +49,7 @@ public class BeerController{
         Stream<BeerPOJO> beerstream = Arrays.stream(allbeers, 0, allbeers.length-1);
 
         beertext.setText(beerstream.filter(a -> a.getName().equals(userentry.getText())).findFirst().get().toString());
-        //String found = masodik.stream().filter(a -> a.getName().equals(userentry.getText())).toString();
 
-    /*    for (var a: masodik
-        ) {
-            if (a.getName().equals(userentry.getText()))
-            {
-                beertext.setText(a.toString());
-            }
-        }
-*/
         Logger.info("User's data has been saved to Json file.");
 
     }

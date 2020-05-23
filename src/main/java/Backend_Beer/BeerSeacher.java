@@ -19,10 +19,7 @@ public class BeerSeacher {
 
     public static int RandomNumber()
     {
-      //  int randomNum = ThreadLocalRandom.current().nextInt(0, 170 + 1);
-
-
-        return ThreadLocalRandom.current().nextInt(0, 170 + 1);
+        return ThreadLocalRandom.current().nextInt(0, 160 + 1);
     }
 
 

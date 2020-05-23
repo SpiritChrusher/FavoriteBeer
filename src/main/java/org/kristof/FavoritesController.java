@@ -29,7 +29,7 @@ public class FavoritesController {
     @FXML
     private Button Back;
 
-    Person person;
+    private Person person;
     public void initdata(Person user) {
         person = user;
         nameLabel.setText("name: " + person.getName());
