@@ -2,8 +2,8 @@ Backend_Beer\BeerPOJO.class
 Backend_Beer\BeerSeacher.class
 Backend_Beer\PersonDAO.class
 Backend_Beer\BeerDAO.class
-Backend_Beer\BeerTastes.class
 org\kristof\App.class
+Backend_Beer\BeerDAO$1.class
 org\kristof\FavoritesController.class
 Backend_Beer\Beertypes.class
 org\kristof\Main.class

@@ -10,8 +10,7 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class SearchTest {
-
+public class BeerSearcherTest {
 
     @Test
     void priceTest()
@@ -48,7 +47,7 @@ public class SearchTest {
         list.add("slightly gassy");
 
 
-BeerSeacher a = new BeerSeacher();
+        BeerSeacher a = new BeerSeacher();
 
         ArrayList<BeerPOJO> output = a.Favorite_types(list, testbeers.toArray(BeerPOJO[]::new));
 
@@ -56,7 +55,5 @@ BeerSeacher a = new BeerSeacher();
         assertEquals(2, output.size());
         assertEquals("Beertailor Pils", out2);
     }
-
-
 
 }

@@ -5,13 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-//@AllArgsConstructor
-//@NoArgsConstructor
-//@lombok.Data
 public class BeerPOJO {
-
-  //  public  enum Blonde_beers {LAGER("lager",1);  hop_lager("hoplager",5);new_england_ipa("newengland",6); ipa("ipa",7); west_coast_ipa("wcipa",8); double_ipa("dipa",10);};
-
 
 
     
@@ -81,8 +75,6 @@ public class BeerPOJO {
 
     private Double packformat;
 
- //   private Double price_value;
-
     public BeerPOJO(String aname, Double alc, String[] ataste, String aorigin, String[] atype, String amanufacturer,
                     String aconsumption, Integer aprice, Double aquality, String[] aacquisition, Double apackformat)
     {
@@ -101,6 +93,8 @@ public class BeerPOJO {
 
     public BeerPOJO(String aname){ name = aname;}
 
+        public BeerPOJO(){}
+
     @Override
     public String toString() {
         return "name: " + name + '\'' +
@@ -109,8 +103,6 @@ public class BeerPOJO {
     }
 
 
-    //  return new GsonBuilder().setPrettyPrinting().create().toJson(this);
-    //For testing methods
     public BeerPOJO(String aname, String[] atype, Double aqauality, Integer aprice)
     {
         name = aname;
@@ -120,7 +112,7 @@ public class BeerPOJO {
 
     }
 
-    public BeerPOJO(){}
+
 
     public String getName() {
         return name;

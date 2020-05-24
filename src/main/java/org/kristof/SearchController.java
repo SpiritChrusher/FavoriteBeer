@@ -2,6 +2,7 @@ package org.kristof;
 
 import Backend_Beer.*;
 
+import com.google.gson.Gson;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -19,8 +20,13 @@ import javafx.stage.Stage;
 import org.tinylog.Logger;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 import java.util.*;
@@ -94,6 +100,9 @@ public class SearchController {
 
     public void Search(ActionEvent actionEvent) throws IOException, URISyntaxException {
 
+
+
+
         List<String> consultations = listchosen.getItems();
         ArrayList<String> showing;
         if (consultations instanceof ArrayList<?>) {
@@ -104,13 +113,14 @@ public class SearchController {
 
 
 
+       // BeerPOJO[] bj = new Gson().fromJson(new InputStreamReader(jsonfile), BeerPOJO);
+
 
         found.setText(BeerSeacher.Bestbeer(BeerSeacher.Favorite_types(showing, BeerDAO.ReadBeers())));
 
 
-        BeerPOJO foundbeer = new BeerPOJO();
-        founded.add(foundbeer);
-        user.setFavoritebeers(founded);
+
+        user.addtoList(found.getText());
         Logger.debug("Saving result to the user.");
 
 
@@ -159,6 +169,12 @@ public class SearchController {
         stage.setScene(new Scene(root));
         stage.show();
         stage.setTitle("Favorites");
+
+        System.out.println(user.getName());
+        for (var a: user.getFavoritebeers()
+             ) {
+            System.out.println("listaelem" + a);
+        }
         fxmlLoader.<FavoritesController>getController().initdata(user);
         Logger.info("Moving to {} page", stage.getTitle());
 

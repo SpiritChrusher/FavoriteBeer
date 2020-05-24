@@ -71,17 +71,13 @@ public class BeerSeacher {
             }
 
         }
-if (yourbeers.size() == 0)
-{
-    BeerPOJO sorike = new BeerPOJO("sorike");
-    yourbeers.add(sorike);
-}
+
 
         return yourbeers;
     }
 
     public static String Bestbeer(ArrayList<BeerPOJO> yourbeers) throws IOException, URISyntaxException {
-        if(yourbeers.size() > 1) {
+        if(yourbeers.size() > 0) {
             for (var i : yourbeers) {
                 i.calcutale_pricevalue();
             }

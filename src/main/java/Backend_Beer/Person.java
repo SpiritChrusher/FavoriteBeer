@@ -4,28 +4,26 @@ import lombok.*;
 
 import java.util.ArrayList;
 
-
-//@lombok.Data
 public class Person {
 
     private String name;
 
-    private String[] taste;
 
-    private ArrayList<BeerPOJO> favoritebeers;
+
+    private ArrayList<String> favoritebeers = new ArrayList<>();
 
     public Person(){}
 
-    public Person(String name, String[] taste, ArrayList<BeerPOJO> favoritebeers) {
+    public Person(String name){ //, ArrayList<String> favoritebeers) {
         this.name = name;
-        this.taste = taste;
-        this.favoritebeers = favoritebeers;
+
+ //       this.favoritebeers = favoritebeers;
+    }
+    public void addtoList(String a)
+    {
+        favoritebeers.add(a);
     }
 
-    public Person(String aname)
-    {
-    name = aname;
-    }
 
     public String getName() {
         return name;
@@ -35,19 +33,11 @@ public class Person {
         this.name = name;
     }
 
-    public String[] getTaste() {
-        return taste;
-    }
-
-    public void setTaste(String[] taste) {
-        this.taste = taste;
-    }
-
-    public ArrayList<BeerPOJO> getFavoritebeers() {
+    public ArrayList<String> getFavoritebeers() {
         return favoritebeers;
     }
 
-    public void setFavoritebeers(ArrayList<BeerPOJO> favoritebeers) {
+    public void setFavoritebeers(ArrayList<String> favoritebeers) {
         this.favoritebeers = favoritebeers;
     }
 
