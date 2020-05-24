@@ -3,6 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.kristof</groupId>
     <artifactId>Favoritebeer_Mark_I</artifactId>
+    <description>Favorite beer program.</description>
+    <scm>
+        <connection>https://github.com/SpiritChrusher/FavoriteBeer.git</connection>
+        <developerConnection>https://github.com/SpiritChrusher/FavoriteBeer.git</developerConnection>
+    </scm>
     <version>1.0</version>
     <packaging>jar</packaging>
     <properties>
@@ -167,7 +172,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-site-plugin</artifactId>
-                        <version>3.9.0</version>
+                        <version>3.8.2</version>
                     </plugin>
                 </plugins>
                 <resources>

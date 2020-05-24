@@ -19,12 +19,13 @@ import java.io.IOException;
 public class FavoritesController {
 
     @FXML
-    private Label nameLabel;
+    private Label namelabel;
 
     @FXML
     private ListView beerlist;
 
-    @FXML private Label beertext;
+    @FXML
+    private Label beertext;
 
     @FXML
     private Button Back;
@@ -33,15 +34,11 @@ public class FavoritesController {
 
     public void initdata(Person user) {
         person = user;
-        nameLabel.setText("name: " + person.getName());
+        namelabel.setText("name: " + person.getName());
         beerlist.getItems().addAll(person.getFavoritebeers());
     }
 
-  /*  public void initialize() {
 
-
-
-    }*/
 
     public void Back(ActionEvent actionEvent) throws IOException {
 
@@ -51,7 +48,7 @@ public class FavoritesController {
         stage.setScene(new Scene(root));
         stage.show();
         stage.setTitle("Searching");
-        fxmlLoader.<FavoritesController>getController().initdata(person);
+        fxmlLoader.<SearchController>getController().initdata(person);
         Logger.info("Moving to {} page", stage.getTitle());
 
     }

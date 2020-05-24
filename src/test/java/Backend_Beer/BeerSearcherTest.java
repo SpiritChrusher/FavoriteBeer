@@ -10,10 +10,10 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class BeerSearcherTest {
+public class BeerSearcherTest {
 
     @Test
-    void priceTest()
+    public void priceTest()
     {
     BeerPOJO beer = new BeerPOJO("favbeer", new String[]{"ale", "IPA"}, 6.0, 700);
         MathContext m = new MathContext(3);
@@ -23,7 +23,7 @@ class BeerSearcherTest {
     }
 
     @Test
-    void favoritetypeTest() throws IOException, URISyntaxException {
+    public void favoritetypeTest() throws IOException, URISyntaxException {
 
         List<BeerPOJO> testbeers = new ArrayList<>();
 
