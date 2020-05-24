@@ -331,16 +331,6 @@ public class Beer {
         price = aprice;
 
     }
-
-
-
-  /*  @Override
-    public String toString() {
-        return "name: " + name + '\'' +
-                ", alcohol: " + alcohol +
-                ", quality: " + quality + '\'';
-    }*/
-
     @Override
     public String toString() {
         return "name=" + name +

@@ -52,9 +52,6 @@ public enum Beertypes{
         this.typename = typename;
         this.value = value;
     }
-/*    private String typename() { return typename; }
-    private double value() { return value; }
-*/
     public String getName()
     {
         return this.typename;
