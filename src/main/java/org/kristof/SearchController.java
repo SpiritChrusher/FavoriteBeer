@@ -176,6 +176,7 @@ public class SearchController {
             System.out.println("listaelem" + a);
         }
         fxmlLoader.<FavoritesController>getController().initdata(user);
+
         Logger.info("Moving to {} page", stage.getTitle());
 
     }

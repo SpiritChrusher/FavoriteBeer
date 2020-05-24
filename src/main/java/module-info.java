@@ -1,7 +1,7 @@
 module org.kristof {
     requires javafx.controls;
     requires javafx.fxml;
-    requires lombok;
+ //   requires lombok;
 
     requires com.google.gson;
     requires org.tinylog.api;

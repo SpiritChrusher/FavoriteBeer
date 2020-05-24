@@ -1,15 +1,17 @@
 package Backend_Beer;
 
-import lombok.*;
+
+import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
 
 public class Person {
 
+    @SerializedName("name")
     private String name;
 
 
-
+    @SerializedName("favoritebeers")
     private ArrayList<String> favoritebeers = new ArrayList<>();
 
     public Person(){}
