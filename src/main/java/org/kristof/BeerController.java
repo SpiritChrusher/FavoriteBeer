@@ -1,8 +1,8 @@
 package org.kristof;
 
 import Backend_Beer.BeerDAO;
-import Backend_Beer.BeerPOJO;
-import Backend_Beer.Person;
+import Backend_Beer.Beer;
+import Backend_Beer.PersonPOJO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,44 +11,37 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import com.google.gson.*;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.tinylog.Logger;
 
 import java.io.*;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class BeerController{
     @FXML
-    public Label beertext;
-
-    @FXML
-    public Button tosearch;
+    private Label beertext;
 
     @FXML
     private Label playername;
 
     @FXML
-    public TextField userentry;
+    private TextField userentry;
 
 
-    private Person person;
+    private PersonPOJO person;
 
-    public void initdata(Person p) {
+    public void initdata(PersonPOJO p) {
          person = p;
         playername.setText("User: " + person.getName());
     }
 
     public void onEnter(ActionEvent actionEvent) throws IOException, URISyntaxException {
 
-      List<BeerPOJO> allbeers = BeerDAO.ReadBeers();
+      List<Beer> all_beers = BeerDAO.ReadBeers();
 
-        beertext.setText(allbeers.stream().filter(a -> a.getName().equals(userentry.getText())).findFirst().get().toString());
+        beertext.setText(all_beers.stream().filter(a -> a.getName().equals(userentry.getText())).findFirst().get().toString());
 
         Logger.info("User's data has been saved to Json file.");
 

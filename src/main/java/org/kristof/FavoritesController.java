@@ -1,7 +1,6 @@
 package org.kristof;
 
-import Backend_Beer.BeerPOJO;
-import Backend_Beer.Person;
+import Backend_Beer.PersonPOJO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -30,10 +29,10 @@ public class FavoritesController {
     @FXML
     private Button Back;
 
-    private Person person;
+    private PersonPOJO person;
 
-    public void initdata(Person user) {
-        person = user;
+    public void initdata(PersonPOJO p) {
+        person = p;
         namelabel.setText("name: " + person.getName());
         beerlist.getItems().addAll(person.getFavoritebeers());
     }

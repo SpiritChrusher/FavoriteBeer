@@ -1,7 +1,5 @@
 package org.kristof;
 
-import Backend_Beer.Person;
-import Backend_Beer.PersonDAO;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,8 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.tinylog.Logger;
 
-import java.lang.reflect.*;
-import java.lang.Object;
 import java.io.IOException;
 
 

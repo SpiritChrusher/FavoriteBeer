@@ -1,25 +1,22 @@
 package Backend_Beer;
 
-
-import com.google.gson.annotations.SerializedName;
-
 import java.util.ArrayList;
 
-public class Person {
+/**
+ * Class to represent the current user.
+ */
+public class PersonPOJO {
 
-    @SerializedName("name")
+
     private String name;
 
 
-    @SerializedName("favoritebeers")
     private ArrayList<String> favoritebeers = new ArrayList<>();
 
-    public Person(){}
+    public PersonPOJO(){}
 
-    public Person(String name){ //, ArrayList<String> favoritebeers) {
+    public PersonPOJO(String name){
         this.name = name;
-
- //       this.favoritebeers = favoritebeers;
     }
     public void addtoList(String a)
     {

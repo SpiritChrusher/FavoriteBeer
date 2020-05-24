@@ -15,9 +15,9 @@ public class BeerSearcherTest {
     @Test
     public void priceTest()
     {
-    BeerPOJO beer = new BeerPOJO("favbeer", new String[]{"ale", "IPA"}, 6.0, 700);
+    Beer beer = new Beer("favbeer", new String[]{"ale", "IPA"}, 6.0, 700);
         MathContext m = new MathContext(3);
-        BigDecimal output = new BigDecimal(BeerSeacher.Price_value(beer)).round(m);
+        BigDecimal output = new BigDecimal(Beerseacher.price_Value(beer)).round(m);
 
     assertEquals(6.43,output.doubleValue());
     }
@@ -25,17 +25,17 @@ public class BeerSearcherTest {
     @Test
     public void favoritetypeTest() throws IOException, URISyntaxException {
 
-        List<BeerPOJO> testbeers = new ArrayList<>();
+        List<Beer> testbeers = new ArrayList<>();
 
-        testbeers.add(new BeerPOJO("Beertailor Porter", 5.0,
+        testbeers.add(new Beer("Beertailor Porter", 5.0,
                 new String[] {"pleasing", "cocoa taste", "biscuit taste", "slightly bitter", "creamy", "moderately easy to drink"},
                 "Hungary", new String[] {"ale", "porter"},"Beertailor", "semi complex", 1000,
                 7.5, new String[]{"Online"}, 0.33));
-        testbeers.add(new BeerPOJO("Beertailor Pils", 5.0,
+        testbeers.add(new Beer("Beertailor Pils", 5.0,
                 new String[] {"pleasing", "easy to drink","bread yeast taste", "slightly gassy", "fruity"},
                 "Hungary", new String[] {"lage", "american lager", "pils"},"Beertailor", "semi complex", 770,
                 6.0, new String[]{"Online"}, 0.33));
-        testbeers.add(new BeerPOJO("Beertailor Pils", 5.0,
+        testbeers.add(new Beer("Beertailor Pils", 5.0,
                 new String[] {"pleasing", "easy to drink","bread yeast taste", "slightly gassy", "fruity"},
                 "Hungary", new String[] {"lage", "american lager", "pils"},"Beertailor", "semi complex", 770,
                 6.0, new String[]{"Online"}, 0.33));
@@ -47,11 +47,11 @@ public class BeerSearcherTest {
         list.add("slightly gassy");
 
 
-        BeerSeacher a = new BeerSeacher();
+        Beerseacher a = new Beerseacher();
 
-        List<BeerPOJO> output = a.Favorite_types(list, testbeers);
+        List<Beer> output = a.Favorite_types(list, testbeers);
 
-        String out2 = BeerSeacher.Bestbeer(output);
+        String out2 = Beerseacher.Bestbeer(output);
         assertEquals(2, output.size());
         assertEquals("Beertailor Pils", out2);
     }

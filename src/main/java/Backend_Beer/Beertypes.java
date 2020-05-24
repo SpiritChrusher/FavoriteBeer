@@ -1,5 +1,9 @@
 package Backend_Beer;
 
+/**
+ * Enum to help findig how good each beertype is.
+ */
+
 public enum Beertypes{
 
     RADLER("radler",1.5),
@@ -48,9 +52,9 @@ public enum Beertypes{
         this.typename = typename;
         this.value = value;
     }
-    private String typename() { return typename; }
+/*    private String typename() { return typename; }
     private double value() { return value; }
-
+*/
     public String getName()
     {
         return this.typename;
@@ -59,11 +63,5 @@ public enum Beertypes{
     {
         return this.value;
     }
-
-
-double sajt(Beertypes a)
-{
-    return a.value() * 10;
-}
 
 }

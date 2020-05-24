@@ -2,48 +2,26 @@ package org.kristof;
 
 import Backend_Beer.*;
 
-import com.google.gson.Gson;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonBar;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import org.tinylog.Logger;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.lang.reflect.Array;
-import java.net.URISyntaxException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
 
 import java.util.*;
 
 public class SearchController {
 
-    @FXML
-    private Button tofavorites;
 
-    @FXML
-    private Button tobeers;
-
-    @FXML
-    private Label options;
-
-    @FXML
-    private Label selected;
 
     @FXML
     private Label username;
@@ -55,86 +33,72 @@ public class SearchController {
     private ListView listchosen;
 
     @FXML
-    private Button search;
-
-    @FXML
-    private Button move;
-
-    @FXML
     private Label found;
 
 
-    private Person user;
-    private final ObservableList<String> chosentastes = FXCollections.observableArrayList();
-    private Integer selectedIndex = -1;
+    private PersonPOJO person;
+    private final ObservableList<String> chosen_tastes = FXCollections.observableArrayList();
+   // private Integer selectedIndex = -1;
 
-    ArrayList<String> tasteoptions = new ArrayList<>();
 
-    ArrayList<BeerPOJO> founded = new ArrayList<>();
-
-    public void initdata(Person p){
-        user = p;
-        username.setText("Current user: " + user.getName());
+    public void initdata(PersonPOJO p){
+        person = p;
+        username.setText("Current user: " + person.getName());
 
     }
 
     public void initialize() {
 
         populate(listshow);
-        listchosen.setItems(chosentastes);
+        listchosen.setItems(chosen_tastes);
 
     }
 
 
     public void populate(ListView a) {
 
-        a.getItems().addAll(BeerPOJO.izek);
+        a.getItems().addAll(Beer.TASTES);
 
         Logger.info("Listview is populated");
     }
 
     public void Move(ActionEvent actionEvent) {
-        chosentastes.add(listshow.getSelectionModel().getSelectedItem().toString());
+        chosen_tastes.add(listshow.getSelectionModel().getSelectedItem().toString());
 
     }
 
-    public void Search(ActionEvent actionEvent) throws IOException, URISyntaxException {
+    public void Search(ActionEvent actionEvent) {
 
+        List<String> chosen = listchosen.getItems();
 
+        if(chosen.size() >= 2) {
+            found.setText(Beerseacher.Bestbeer(Beerseacher.Favorite_types(chosen, BeerDAO.ReadBeers())));
 
-
-        List<String> consultations = listchosen.getItems();
-        ArrayList<String> showing;
-        if (consultations instanceof ArrayList<?>) {
-            showing = (ArrayList<String>) consultations;
-        } else {
-            showing = new ArrayList<>(consultations);
+            Logger.debug("Saving result to the user.");
         }
-
-
-
-        found.setText(BeerSeacher.Bestbeer(BeerSeacher.Favorite_types(showing, BeerDAO.ReadBeers())));
-
-
-
-        user.addtoList(found.getText());
-        Logger.debug("Saving result to the user.");
-
+        else{
+            found.setText("Please add at least 2 elements!");
+            Logger.warn("User didn't provide at least 2 tastes");
+        }
+        if(!found.getText().equals("Selected options didn't match any beers"))
+        {
+            person.addtoList(found.getText());
+            Logger.debug("Saving result to the user.");
+        }
 
     }
 
 
     public void toBeers(ActionEvent actionEvent) throws IOException {
 
-        PersonDAO.WriteToJson(user);
-        Logger.debug("user infos are saved to a json file.");
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Beer.fxml"));
         Parent root = fxmlLoader.load();
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
         stage.setTitle("Beers");
-        fxmlLoader.<BeerController>getController().initdata(user);
+        fxmlLoader.<BeerController>getController().initdata(person);
         Logger.info("Moving to {} page", stage.getTitle());
 
     }
@@ -154,7 +118,7 @@ public class SearchController {
                     (selectedIdx == listchosen.getItems().size() - 1)
                             ? selectedIdx - 1
                             : selectedIdx;
-            listchosen.getItems().remove(selectedIdx); //.getSelectionModel().clearSelection();
+            listchosen.getItems().remove(selectedIdx);
         }
     }
 
@@ -167,7 +131,7 @@ public class SearchController {
         stage.show();
         stage.setTitle("Favorites");
 
-        fxmlLoader.<FavoritesController>getController().initdata(user);
+        fxmlLoader.<FavoritesController>getController().initdata(person);
 
         Logger.info("Moving to {} page", stage.getTitle());
 
