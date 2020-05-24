@@ -1,5 +1,7 @@
 package Backend_Beer;
 
+import java.util.Arrays;
+
 /**
  * Class to represent each beer's attributes and every possible taste.
  */
@@ -7,165 +9,6 @@ package Backend_Beer;
 
 
 public class Beer {
-
-    private  String name;
-
-    private Double alcohol;
-
-    private String[] taste;
-
-    private String origin;
-
-    private String[] type;
-
-    private String manufacturer;
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAlcohol(Double alcohol) {
-        this.alcohol = alcohol;
-    }
-
-    public void setTaste(String[] taste) {
-        this.taste = taste;
-    }
-
-    public void setOrigin(String origin) {
-        this.origin = origin;
-    }
-
-    public void setType(String[] type) {
-        this.type = type;
-    }
-
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
-
-    public void setConsumption(String consumption) {
-        this.consumption = consumption;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
-    }
-
-    public void setQuality(Double quality) {
-        this.quality = quality;
-    }
-
-    public void setAcquisition(String[] acquisition) {
-        this.acquisition = acquisition;
-    }
-
-    public void setPackformat(Double packformat) {
-        this.packformat = packformat;
-    }
-
-    private String consumption;
-
-    private Integer price;
-
-    private Double quality;
-
-    private String[] acquisition;
-
-    private Double packformat;
-
-    public Beer(String aname, Double alc, String[] ataste, String aorigin, String[] atype, String amanufacturer,
-                String aconsumption, Integer aprice, Double aquality, String[] aacquisition, Double apackformat)
-    {
-        name = aname;
-        alcohol = alc;
-        taste = ataste;
-        origin = aorigin;
-        type = atype;
-        manufacturer = amanufacturer;
-        consumption = aconsumption;
-        price = aprice;
-        quality = aquality;
-        acquisition = aacquisition;
-        packformat = apackformat;
-    }
-
-
-
-    public Beer(){}
-
-
-    public Beer(String aname, String[] atype, Double aqauality, Integer aprice)
-    {
-        name = aname;
-        type = atype;
-        quality = aqauality;
-        price = aprice;
-
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "name: " + name + '\'' +
-                ", alcohol: " + alcohol +
-                ", quality: " + quality + '\'';
-    }
-
-
-
-
-
-
-    public String getName() {
-        return name;
-    }
-
-    public Double getAlcohol() {
-        return alcohol;
-    }
-
-    public String[] getTaste() {
-        return taste;
-    }
-
-    public String getOrigin() {
-        return origin;
-    }
-
-    public String[] getType() {
-        return type;
-    }
-
-    public String getManufacturer() {
-        return manufacturer;
-    }
-
-    public String getConsumption() {
-        return consumption;
-    }
-
-    public Integer getPrice() {
-        return price;
-    }
-
-    public Double getQuality() {
-        return quality;
-    }
-
-    public String[] getAcquisition() {
-        return acquisition;
-    }
-
-    public Double getPackformat() {
-        return packformat;
-    }
-
-    public Double calcutale_pricevalue()
-    {return Beerseacher.price_Value(this);}
-
-
 
     public static final String[] TASTES = {"hoppybitter aftertaste",
             "malty",
@@ -207,7 +50,6 @@ public class Beer {
             "interesting taste" ,
             "lemony" ,
             "light" ,
-            "malty" ,
             "mild roasted bitter taste" ,
             "mild wheatbeer taste" ,
             "mild" ,
@@ -316,7 +158,6 @@ public class Beer {
             "definitive lager" ,
             "fruity" ,
             "good czech pils taste" ,
-            "hoppy" ,
             "interesting taste" ,
             "light lager" ,
             "moderately bitter" ,
@@ -346,13 +187,11 @@ public class Beer {
             "brown beer taste" ,
             "caramel" ,
             "citrus" ,
-            "complex" ,
             "definitive czech beer" ,
             "definitive Germany beer" ,
             "definitive lager" ,
             "definitive wheatbeer taste" ,
             "gassy" ,
-            "hoppy" ,
             "lemony" ,
             "mildly bitter" ,
             "moderately bitter" ,
@@ -395,5 +234,176 @@ public class Beer {
             "pleasing" ,
             "slightly wet taste" ,
             "citrus"};
+
+
+    private  String name;
+
+    private Double alcohol;
+
+    private String[] taste;
+
+    private String origin;
+
+    private String[] type;
+
+    private String manufacturer;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAlcohol(Double alcohol) {
+        this.alcohol = alcohol;
+    }
+
+    public void setTaste(String[] taste) {
+        this.taste = taste;
+    }
+
+    public void setOrigin(String origin) {
+        this.origin = origin;
+    }
+
+    public void setType(String[] type) {
+        this.type = type;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public void setConsumption(String consumption) {
+        this.consumption = consumption;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
+
+    public void setQuality(Double quality) {
+        this.quality = quality;
+    }
+
+    public void setAcquisition(String[] acquisition) {
+        this.acquisition = acquisition;
+    }
+
+    public void setPackformat(Double packformat) {
+        this.packformat = packformat;
+    }
+
+    private String consumption;
+
+    private Integer price;
+
+    private Double quality;
+
+    private String[] acquisition;
+
+    private Double packformat;
+
+    public Beer(String aname, Double alc, String[] ataste, String aorigin, String[] atype, String amanufacturer,
+                String aconsumption, Integer aprice, Double aquality, String[] aacquisition, Double apackformat)
+    {
+        name = aname;
+        alcohol = alc;
+        taste = ataste;
+        origin = aorigin;
+        type = atype;
+        manufacturer = amanufacturer;
+        consumption = aconsumption;
+        price = aprice;
+        quality = aquality;
+        acquisition = aacquisition;
+        packformat = apackformat;
+    }
+
+
+
+    public Beer(){}
+
+
+    public Beer(String aname, String[] atype, Double aqauality, Integer aprice)
+    {
+        name = aname;
+        type = atype;
+        quality = aqauality;
+        price = aprice;
+
+    }
+
+
+
+  /*  @Override
+    public String toString() {
+        return "name: " + name + '\'' +
+                ", alcohol: " + alcohol +
+                ", quality: " + quality + '\'';
+    }*/
+
+    @Override
+    public String toString() {
+        return "name=" + name +
+                ", alcohol: " + alcohol +
+                "\n taste: " + Arrays.toString(taste) +
+                "\n origin='" + origin + '\'' +
+                "\n type: " + Arrays.toString(type) +
+                "\n manufacturer: " + manufacturer + '\'' +
+                ", consumption: " + consumption + '\'' +
+                ", price: " + price +
+                ", quality: " + quality +
+                "\n acquisition: " + Arrays.toString(acquisition) +
+                ", packformat: " + packformat;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Double getAlcohol() {
+        return alcohol;
+    }
+
+    public String[] getTaste() {
+        return taste;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+    public String[] getType() {
+        return type;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public String getConsumption() {
+        return consumption;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public Double getQuality() {
+        return quality;
+    }
+
+    public String[] getAcquisition() {
+        return acquisition;
+    }
+
+    public Double getPackformat() {
+        return packformat;
+    }
+
+    public Double calcutale_pricevalue()
+    {return Beerseacher.price_Value(this);}
+
+
+
 
 }

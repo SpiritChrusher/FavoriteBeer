@@ -19,7 +19,7 @@
             <Label fx:id="playername" layoutX="343.0" layoutY="5.0" prefHeight="18.0" prefWidth="113.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
             <TextField fx:id="userentry" alignment="CENTER" layoutX="326.0" layoutY="93.0" maxWidth="200" onAction="#onEnter" text="enter your favorite beer here" GridPane.columnIndex="0" GridPane.rowIndex="1" />
 
-            <Label fx:id="beertext" text="here comes the beer" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label fx:id="beertext" text="here comes the beer" prefWidth="500" prefHeight="300" GridPane.columnIndex="0" GridPane.rowIndex="2" />
          <Button fx:id="tosearch" text="ToSearching" onAction="#tosearch" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
         </children>

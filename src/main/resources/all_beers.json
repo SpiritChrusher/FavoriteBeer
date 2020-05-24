@@ -190,7 +190,7 @@
     "type": ["lager"],
     "manufacturer": "Borsodi",
     "consumption": "drinkbeer",
-    "price": " 270",
+    "price": 270,
     "quality": 3.0,
     "acquisition": ["Spar", "TESCO", "Lidl"],
     "packformat": 0.5
@@ -206,7 +206,6 @@
     "price": 600,
     "quality": 6.5,
     "acquisition":[ "InterSpar"],
-    "priceertek": "6.5",
     "packformat": 0.5
   },
   {
@@ -438,7 +437,7 @@
     "type": ["Ale", "IPA", "american IPA"],
     "manufacturer": "HopTop",
     "consumption": "complex",
-    "price": -1,
+    "price": 9999,
     "quality": 8.5,
     "acquisition":[ "InterSpar", " Stay"],
     "packformat": 0.5
@@ -761,6 +760,7 @@
     "type": ["Ale","wheatbeer"],
     "manufacturer": "Feldschlößchen",
     "consumption": "drinkbeer",
+    "price": 300,
     "quality": 4.5,
     "acquisition":[ "Spar", "Tesco"],
     "packformat": 0.5
@@ -1084,7 +1084,7 @@
     "type": ["Ale", "IPA", "West-Coast IPA"],
     "manufacturer": "Mad Scientist",
     "consumption": "complex",
-    "price": "900",
+    "price": 900,
     "quality": 8.0,
     "acquisition":[ "Stay", "InterSpar", "Online"],
     "packformat": 0.44
@@ -1123,7 +1123,7 @@
     "type": ["Ale","IPA","DIPA","tea DIPA"],
     "manufacturer": "HopTop",
     "consumption": "complex",
-    "price": "900",
+    "price": 900,
     "quality": 9.0,
     "acquisition":[ "Stay", "Online", "InterSpar"],
     "packformat": 0.33
@@ -1214,7 +1214,7 @@
     "type": ["Ale", "Stout", "Imperial Stout", "Russian Imparial Stout"],
     "manufacturer": "Horizont",
     "consumption": "complex",
-    "price": "1550",
+    "price": 1550,
     "quality": 9.0,
     "acquisition":[ "Stay", "Online"],
     "packformat": 0.33
@@ -1539,7 +1539,7 @@
     "type": ["Ale", "Stout", "Imperial Stout", "Russian Imperial Stout"],
     "manufacturer": "Szent Andras",
     "consumption": "complex",
-    "price": "1150",
+    "price": 1000,
     "quality": 9.0,
     "acquisition":[ "Stay", " Gedeon"],
     "packformat": 0.33
@@ -1877,7 +1877,7 @@
     "type": ["lager"],
     "manufacturer": "Csiki ",
     "consumption": "drinkbeer",
-    "price": 0,
+    "price": 500,
     "quality": 4.5,
     "acquisition": ["Online"],
     "packformat": 0.5
@@ -2072,7 +2072,7 @@
     "type": ["ale", "IPA", "brut IPA"],
     "manufacturer": "Monyo",
     "consumption": "complex",
-    "price": -1,
+    "price": 9999,
     "quality": 7.0,
     "acquisition": ["Online"],
     "packformat": 0.33
