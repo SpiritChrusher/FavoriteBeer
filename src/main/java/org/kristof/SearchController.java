@@ -113,9 +113,6 @@ public class SearchController {
 
 
 
-       // BeerPOJO[] bj = new Gson().fromJson(new InputStreamReader(jsonfile), BeerPOJO);
-
-
         found.setText(BeerSeacher.Bestbeer(BeerSeacher.Favorite_types(showing, BeerDAO.ReadBeers())));
 
 
@@ -171,8 +168,8 @@ public class SearchController {
         stage.setTitle("Favorites");
 
         System.out.println(user.getName());
-        for (var a: user.getFavoritebeers()
-             ) {
+        for (var a: user.getFavoritebeers())
+        {
             System.out.println("listaelem" + a);
         }
         fxmlLoader.<FavoritesController>getController().initdata(user);

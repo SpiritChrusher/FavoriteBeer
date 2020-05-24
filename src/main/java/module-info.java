@@ -1,13 +1,14 @@
 module org.kristof {
     requires javafx.controls;
     requires javafx.fxml;
- //   requires lombok;
+    requires lombok;
 
     requires com.google.gson;
     requires org.tinylog.api;
+    exports  Backend_Beer;
 
-//requires slf4j.api;
     opens org.kristof to javafx.fxml;
     exports org.kristof;
+    opens Backend_Beer to com.google.gson;
 
 }

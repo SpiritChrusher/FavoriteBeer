@@ -1,10 +1,13 @@
 package Backend_Beer;
-/*
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-*/
+
+/*@NoArgsConstructor
+@AllArgsConstructor
+@lombok.Data*/
 public class BeerPOJO {
 
 
@@ -91,16 +94,9 @@ public class BeerPOJO {
         packformat = apackformat;
     }
 
-    public BeerPOJO(String aname){ name = aname;}
 
-        public BeerPOJO(){}
 
-    @Override
-    public String toString() {
-        return "name: " + name + '\'' +
-                ", alcohol: " + alcohol +
-                ", quality: " + quality + '\'';
-    }
+    public BeerPOJO(){}
 
 
     public BeerPOJO(String aname, String[] atype, Double aqauality, Integer aprice)
@@ -111,6 +107,18 @@ public class BeerPOJO {
         price = aprice;
 
     }
+
+
+
+    @Override
+    public String toString() {
+        return "name: " + name + '\'' +
+                ", alcohol: " + alcohol +
+                ", quality: " + quality + '\'';
+    }
+
+
+
 
 
 

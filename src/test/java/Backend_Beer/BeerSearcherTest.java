@@ -10,7 +10,7 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BeerSearcherTest {
+class BeerSearcherTest {
 
     @Test
     void priceTest()
@@ -25,7 +25,7 @@ public class BeerSearcherTest {
     @Test
     void favoritetypeTest() throws IOException, URISyntaxException {
 
-        ArrayList<BeerPOJO> testbeers = new ArrayList<>();
+        List<BeerPOJO> testbeers = new ArrayList<>();
 
         testbeers.add(new BeerPOJO("Beertailor Porter", 5.0,
                 new String[] {"pleasing", "cocoa taste", "biscuit taste", "slightly bitter", "creamy", "moderately easy to drink"},
@@ -49,7 +49,7 @@ public class BeerSearcherTest {
 
         BeerSeacher a = new BeerSeacher();
 
-        ArrayList<BeerPOJO> output = a.Favorite_types(list, testbeers.toArray(BeerPOJO[]::new));
+        List<BeerPOJO> output = a.Favorite_types(list, testbeers);
 
         String out2 = BeerSeacher.Bestbeer(output);
         assertEquals(2, output.size());

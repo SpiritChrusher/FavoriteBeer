@@ -3,10 +3,8 @@ package Backend_Beer;
 import com.google.gson.*;
 import org.tinylog.Logger;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
 
 public class PersonDAO {
 

@@ -17,7 +17,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class BeerSeacher {
 
-    public static int RandomNumber()
+    private static int RandomNumber()
     {
         return ThreadLocalRandom.current().nextInt(0, 160 + 1);
     }
@@ -41,7 +41,7 @@ public class BeerSeacher {
         return ((actual.getQuality()*beerpoints)/actual.getPrice())*100;
     }
 
-    public static ArrayList<BeerPOJO> Favorite_types(List<String> options, BeerPOJO[] bj) throws IOException, URISyntaxException {
+    public static List<BeerPOJO> Favorite_types(List<String> options, List<BeerPOJO> bj) throws IOException, URISyntaxException {
 
 
 
@@ -76,7 +76,7 @@ public class BeerSeacher {
         return yourbeers;
     }
 
-    public static String Bestbeer(ArrayList<BeerPOJO> yourbeers) throws IOException, URISyntaxException {
+    public static String Bestbeer(List<BeerPOJO> yourbeers) throws IOException, URISyntaxException {
         if(yourbeers.size() > 0) {
             for (var i : yourbeers) {
                 i.calcutale_pricevalue();
@@ -86,9 +86,9 @@ public class BeerSeacher {
             return best;
         }
 
-        BeerPOJO[] yours = BeerDAO.ReadBeers();
+        List<BeerPOJO> yours = BeerDAO.ReadBeers();
 
-        String best = yours[BeerSeacher.RandomNumber()].getName();
+        String best = yours.get(RandomNumber()).getName();
 
         Logger.warn("The selected options list didn't match a beer, so I created: " + best);
         return best;

@@ -30,6 +30,7 @@ public class FavoritesController {
     private Button Back;
 
     private Person person;
+
     public void initdata(Person user) {
         person = user;
         nameLabel.setText("name: " + person.getName());

@@ -20,6 +20,7 @@ import java.io.*;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class BeerController{
@@ -45,10 +46,9 @@ public class BeerController{
 
     public void onEnter(ActionEvent actionEvent) throws IOException, URISyntaxException {
 
-      BeerPOJO[] allbeers = BeerDAO.ReadBeers();
-        Stream<BeerPOJO> beerstream = Arrays.stream(allbeers, 0, allbeers.length-1);
+      List<BeerPOJO> allbeers = BeerDAO.ReadBeers();
 
-        beertext.setText(beerstream.filter(a -> a.getName().equals(userentry.getText())).findFirst().get().toString());
+        beertext.setText(allbeers.stream().filter(a -> a.getName().equals(userentry.getText())).findFirst().get().toString());
 
         Logger.info("User's data has been saved to Json file.");
 
