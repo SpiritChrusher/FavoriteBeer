@@ -12,6 +12,19 @@
       "acquisition": [ "Online", "Stay" ],
       "packformat": 0.33
     },
+         {
+      "name": "Popstar",
+      "alcohol": 6.0,
+      "taste": [ "Kozepesen keseru", "konnyen ihato", "kellemes" ],
+      "origin": "magyar",
+      "type": [ "Ale", "IPA", "glutenfree_IPA ],
+      "manufacturer": "Mad Scientist",
+      "consumption": "felig buzulos",
+      "price": 900,
+      "quality": 7.0,
+      "acquisition": [ "InterSpar", "online" ],
+      "packformat": 0.5
+    },
     {
       "name": "Smooth Hoperator",
       "alcohol": 6.0,
