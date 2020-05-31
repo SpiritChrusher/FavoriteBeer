@@ -1311,22 +1311,9 @@
       "packformat": 0.5
     },
     {
-      "name": "Popstar",
-      "alcohol": 6.0,
-      "taste": [ "Kozepesen keseru", "könnyen iható" "kellemes" ],
-      "origin": "magyar",
-      "type": [ "Ale", "IPA" ],
-      "manufacturer": "Mad Scientist",
-      "consumption": "felig buzulos",
-      "price": 900,
-      "quality": 7.0,
-      "acquisition": [ "InterSpar", "online" ],
-      "packformat": 0.5
-    },
-    {
       "name": "Hajdu Serhaz Session ALe",
       "alcohol": 4.6,
-      "taste": [ "Kellemes, citrusos", "konnyen_ihato" ],
+      "taste": [ "Kellemes","citrusos", "konnyen_ihato" ],
       "origin": "magyar",
       "type": [ "Ale", "Session Ale" ],
       "manufacturer": "Hajdu Serhaz",
