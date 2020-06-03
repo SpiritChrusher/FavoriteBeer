@@ -1,4 +1,30 @@
-[
+[ 
+    {
+      "name": "Primator 16",
+      "alcohol": 7.5,
+      "taste": ["kellemes", "könnyen iható", "nem keserű", "kicsit édes", "kicsit gyümölcsös" ],
+      "origin": "Belga",
+      "type": ["lager", "strong lager"],
+      "manufacturer": "Primator",
+      "consumption": "hatareset",
+      "price": 400,
+      "quality": 7.0,
+      "acquisition": ["InterSpar", "Auchan"],
+      "packformat": 0.5
+    },
+      {
+      "name": "Paulaner Munchener Hell",
+      "alcohol": 4.9, 
+      "taste": ["kellemes", "könnyen iható", "kicsit keserű", "könnyed", "kicsit édes", "komlós", "malátás", "élesztős íz"],
+      "origin": "nemet",
+      "type": ["lager", "munchener lager"],
+      "manufacturer": "Paulaner braurey",
+      "consumption": "drinkbeer",
+      "price": 350,
+      "quality": 6.0,
+      "acquisition": ["Spar", "InterSpar", "Auchan"],
+      "packformat": 0.5
+    },
      {
       "name": "Gallica",
       "alcohol": 4.7,
