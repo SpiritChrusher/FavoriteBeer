@@ -3,7 +3,7 @@
     {
       "name": "Imperial Sour Ale",
       "alcohol": 7.5,
-      "taste": [ "komplex","nagyon savanyu", "citromle utóiz"],
+      "taste": [ "komplex","nagyon savanyu", "citromle utoiz"],
       "origin": "magyar",
       "type": [ "ale", "sour_ale", "imerial_sour_ale"],
       "manufacturer": "Horizont",
