@@ -16,7 +16,7 @@
     {
       "név": "Wernesgruner",
       "alkohol": 4.9,
-      "íz": ["kellemes", "könnyen ihato", "kicsit edes", "kicsit keseru", "szaraz"],
+      "íz": ["kellemes", "konnyen ihato", "kicsit edes", "kicsit keseru", "szaraz"],
       "származás": "nemet",
       "típus": ["lager", "pils"],
       "gyártó": "Wernesgruner Brauerei",
