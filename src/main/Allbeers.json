@@ -1,5 +1,18 @@
 [
      {
+      "name": "Gallica",
+      "alcohol": 4.7,
+      "taste": ["kellemes", "könnyen iható", "nem keserű", "könnyed", "kicsit gyümölcsös" ],
+      "origin": "Belga",
+      "type": ["lager", "Pils"],
+      "manufacturer": "Brasserie de Silly",
+      "consumption": "drinkbeer",
+      "price": 350,
+      "quality": 6.0,
+      "acquisition": ["InterSpar", "Auchan"],
+      "packformat": 0.5
+    },
+     {
       "name": "krusovice svetle",
       "alcohol": 4.2,
       "taste": ["kellemes", "könnyen iható", "kicsit keserű", "könnyed" ],
