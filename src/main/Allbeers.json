@@ -1,4 +1,17 @@
 [
+     {
+      "name": "krusovice svetle",
+      "alcohol": 4.2,
+      "taste": ["kellemes", "könnyen iható", "kicsit keserű", "könnyed" ],
+      "origin": "Cseh",
+      "type": ["lager"],
+      "manufacturer": "borsodi sorgyar",
+      "consumption": "drinkbeer",
+      "price": 270,
+      "quality": 5.0,
+      "acquisition": ["hipermarkets"],
+      "packformat": 0.5
+    }, 
    {
       "name": "Imperial Sour Ale",
       "alcohol": 7.5,
