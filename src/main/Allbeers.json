@@ -1,4 +1,30 @@
 [
+    {
+      "név": "Wernesgruner",
+      "alkohol": 4.9,
+      "íz": ["kellemes", "könnyen iható", "kicsit édes", "kicsit keserű", "száraz"],
+      "származás": "német",
+      "típus": ["lager", "pils"],
+      "gyártó": "Wernesgrüner Brauerei",
+      "fogyasztás": "ivósör",
+      "ár": 400,
+      "minőség": 5.5, 
+      "beszerzés": ["Lidl"],
+      "kiszerelés": 0.5
+    },
+     {
+      "név": "Pecsi Meggy Ale",
+      "alkohol": 4.0,
+      "íz": ["meggyes", "édes"],
+      "származás": "magyar ",
+      "típus": ["ale", "meggy ale"],
+      "gyártó": "Pécsi sörgyár",
+      "fogyasztás": "drinkbeer",
+      "ár": 300,
+      "minőség": 3.5, 
+      "beszerzés": ["InterSpar"],
+      "kiszerelés": 0.5
+    },
      {
       "name": "Imperial Sour Ale",
       "alcohol": 7.5,
