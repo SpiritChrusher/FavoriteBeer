@@ -1,4 +1,17 @@
 [
+     {
+      "name": "Imperial Sour Ale",
+      "alcohol": 7.5,
+      "taste": [ "komplex","nagyon savanyu", "citromlé utóíz"],
+      "origin": "magyar",
+      "type": [ "ale", "sour_ale", "imerial_sour_ale"],
+      "manufacturer": "Horizont",
+      "consumption": "buzulos",
+      "price": 1000,
+      "quality": 7.0,
+      "acquisition": [ "Online", "Stay" ],
+      "packformat": 0.33
+    },
     {
       "név": "Wernesgruner",
       "alkohol": 4.9,
