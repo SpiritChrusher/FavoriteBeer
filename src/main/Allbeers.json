@@ -1,5 +1,44 @@
 [
+
+    {
+      "name": "Imperial Sour Ale",
+      "alcohol": 7.5,
+      "taste": [ "komplex","nagyon savanyu", "citromle utóiz"],
+      "origin": "magyar",
+      "type": [ "ale", "sour_ale", "imerial_sour_ale"],
+      "manufacturer": "Horizont",
+      "consumption": "buzulos",
+      "price": 1000,
+      "quality": 7.0,
+      "acquisition": [ "Online", "Stay" ],
+      "packformat": 0.33
+    },
+    {
+      "név": "Wernesgruner",
+      "alkohol": 4.9,
+      "íz": ["kellemes", "könnyen ihato", "kicsit edes", "kicsit keseru", "szaraz"],
+      "származás": "nemet",
+      "típus": ["lager", "pils"],
+      "gyártó": "Wernesgruner Brauerei",
+      "fogyasztás": "drinkbeer",
+      "ár": 400,
+      "minőség": 5.5, 
+      "beszerzés": ["Lidl"],
+      "kiszerelés": 0.5
+    },
      {
+      "név": "Pecsi Meggy Ale",
+      "alkohol": 4.0,
+      "íz": ["meggyes", "edes"],
+      "származás": "magyar ",
+      "típus": ["ale", "meggy ale"],
+      "gyártó": "pecsi sörgyar",
+      "fogyasztás": "drinkbeer",
+      "ár": 300,
+      "minőség": 3.5, 
+      "beszerzés": ["InterSpar"],
+      "kiszerelés": 0.5
+    }, {
       "name": "Popstar",
       "alcohol": 6.0,
       "taste": [ "Kozepesen keseru", "konnyen ihato", "kellemes" ],
