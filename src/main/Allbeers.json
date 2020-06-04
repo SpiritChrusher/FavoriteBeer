@@ -5,7 +5,7 @@
       "taste": ["kellemes", "könnyen iható", "citrusos", "komlós", "kicsit belga", "kicsit IPA", "kicsit lager", "közepesen keserű"],
       "origin": "magyar",
       "type": ["lager", "hidegkomlós lager"],
-      "manufacturer": "Horízont",
+      "manufacturer": "Horizont",
       "consumption": "Ivósör",
       "price": 600,
       "quality": 6.0,
@@ -18,7 +18,7 @@
       "taste": ["kellemes", "könnyen iható", "gyümölcsös", "belga Búza", "kicsit keserű"],
       "origin": "magyar ",
       "type": ["ale", "Búza", "saison witbier"],
-      "manufacturer": "Horízont",
+      "manufacturer": "Horizont",
       "consumption": "félig Buzulós",
       "price": 690,
       "quality": 6.5,
@@ -96,7 +96,7 @@
       "taste": ["kellemes", "könnyed", "könnyen iható", "kicsit keserű", "érdekes íz"],
       "origin": "magyar ",
       "type": ["lager", "marzen"],
-      "manufacturer": "Horízont",
+      "manufacturer": "Horizont",
       "consumption": "ivósör",
       "price": 400,
       "quality": 6.5, 
@@ -104,7 +104,7 @@
       "packformat": 0.5
     },
 	{
-      "name": "Arany Korso",
+      "name": "Arany Korsó",
       "alcohol": 4.0,
       "taste": ["közepesen rossz", "könnyen iható", "kicsit édes", "kicsit keserű", "kicsit vízes"],
       "origin": "magyar ",
@@ -208,12 +208,12 @@
       "packformat": 0.5
     }, 
    {
-      "name": "Horízont Imperial Sour Ale",
+      "name": "Horizont Imperial Sour Ale",
       "alcohol": 7.5,
       "taste": [ "komplex","nagyon savanyú", "citromle utóíz"],
       "origin": "magyar",
       "type": [ "ale", "sour ale", "imerial sour ale"],
-      "manufacturer": "Horízont",
+      "manufacturer": "Horizont",
       "consumption": "buzulós",
       "price": 1000,
       "quality": 7.0,
@@ -471,7 +471,7 @@
     {
       "name": "Budwiser dark",
       "alcohol": 5.0,
-      "taste": [ "Kellemes barna sor"],
+      "taste": [ "Kellemes barna sör"],
       "origin": "cseh",
       "type": [ "Lager"],
       "manufacturer": "Budwiser",
@@ -495,7 +495,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Csíki Szuretlen",
+      "name": "Csíki Szűretlen",
       "alcohol": 5.0,
       "taste": [ "Kellemes termeszetes íz", "enyhén komlós", "könnyen iható"],
       "origin": "Székelyföld",
@@ -625,7 +625,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Gyertyanos Pils",
+      "name": "Gyertyános Pils",
       "alcohol": 4.6,
       "taste": [ "Kellemes pils íz", "enyhén keserű utóíz"],
       "origin": "magyar",
@@ -634,33 +634,33 @@
       "consumption": "ivósör",
       "price": 370,
       "quality": 4.5,
-      "acquisition": [ "Gyertyanos"],
+      "acquisition": [ "Gyertyános"],
       "packformat": 1.0
     },
     {
-      "name": "Gyertyanos Barna Gyemant",
+      "name": "Gyertyános Barna Gyémant",
       "alcohol": 5.5,
       "taste": [ "Kellemesen kávés", "füstos ízű"],
       "origin": "magyar",
       "type": [ "Lager", "Barna lager"],
-      "manufacturer": "Gyertyanos",
+      "manufacturer": "Gyertyános",
       "consumption": "ivósör",
       "price": 670,
       "quality": 5.5,
-      "acquisition": [ "Gyertyanos"],
+      "acquisition": [ "Gyertyános"],
       "packformat": 1.0
     },
     {
-      "name": "Gyertyanos Kazamata",
+      "name": "Gyertyános Kazamata",
       "alcohol": 8.0,
       "taste": [ "Nyers", "élesztős utóíz", "könnyen iható"],
       "origin": "magyar",
       "type": [ "Lager", "Imperial lager"],
-      "manufacturer": "Gyertyanos",
+      "manufacturer": "Gyertyános",
       "consumption": "ivósör",
       "price": 900,
       "quality": 4.0,
-      "acquisition": [ "Gyertyanos "],
+      "acquisition": [ "Gyertyános "],
       "packformat": 1.0
     },
     {
@@ -703,7 +703,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Deep Zold",
+      "name": "Deep Zöld",
       "alcohol": 4.0,
       "taste": [ "közepesen vízes", "mar iható", "enyhe lager"],
       "origin": "horvath",
@@ -755,7 +755,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Gosser",
+      "name": "Gösser",
       "alcohol": 5.1,
       "taste": [ "Kellemes íz", "kicsit keserű", "jo lager"],
       "origin": "osztrák?",
@@ -884,7 +884,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Soproni Demon",
+      "name": "Soproni Démon",
       "alcohol": 5.2,
       "taste": [ "Barna sörös íz"],
       "origin": "magyar",
@@ -892,14 +892,14 @@
       "manufacturer": "Heineken Hungaria",
       "consumption": "ivósör",
       "price": 280,
-      "quality": 3.5,
+      "quality": 4.5,
       "acquisition": [ "Spar", "TESCO"],
       "packformat": 0.5
     },
     {
       "name": "Primator",
       "alcohol": 4.0,
-      "taste": [ "Alap cseh típusú sor"],
+      "taste": [ "Alap cseh típusú sör"],
       "origin": "magyar",
       "type": [ "Lager"],
       "manufacturer": "Pivovar Primator",
@@ -925,7 +925,7 @@
     {
       "name": "Steam Brew Imperial Stout",
       "alcohol": 7.5,
-      "taste": [ "erős", "tömény", "kávés ízű finom sor"],
+      "taste": [ "erős", "tömény", "kávés ízű finom sör"],
       "origin": "német",
       "type": [ "Ale", "Stout", "Imperial Stout"],
       "manufacturer": "Privatbrauerei Eichbaum",
@@ -974,9 +974,9 @@
       "packformat": 0.5
     },
     {
-      "name": "Sixtusbräu",
+      "name": "Sixtusbrau",
       "alcohol": 4.2,
-      "taste": [ "Alap német sor"],
+      "taste": [ "Alap német sör"],
       "origin": "német",
       "type": [ "Lager"],
       "manufacturer": "Van Pur",
@@ -1001,7 +1001,7 @@
     {
       "name": "Dreher Bak",
       "alcohol": 7.2,
-      "taste": [ "erős karamelles barna sor", "eleg nehez", "de kettotol jol erezheted magad"],
+      "taste": [ "erős karamelles barna sör", "eleg nehez", "de kettotol jol erezheted magad"],
       "origin": "magyar",
       "type": [ "Lager", "Strong lager", "BAK"],
       "manufacturer": "Dreher",
@@ -1014,7 +1014,7 @@
     {
       "name": "Soproni 1895",
       "alcohol": 5.3,
-      "taste": [ "erős keserű vilagos sor", "eleg egyedi íz", "Saazer komlo"],
+      "taste": [ "erős keserű világos sör", "eleg egyedi íz", "Saazer komlo"],
       "type": [ "Lager"],
       "origin": "magyar",
       "manufacturer": "Heineken Hungaria",
@@ -1040,7 +1040,7 @@
     {
       "name": "Dreher Gold",
       "alcohol": 5.0,
-      "taste": [ "Az alap Dreher sor", "kukoricamentesen", "kisse vízes íz", "kellemes nem túl keserű", "a Sopronihoz hasonlo"],
+      "taste": [ "Az alap Dreher sör", "kukoricamentesen", "kisse vízes íz", "kellemes nem túl keserű", "a Sopronihoz hasonlo"],
       "origin": "magyar",
       "type": [ "Lager"],
       "manufacturer": "Dreher",
@@ -1077,9 +1077,9 @@
       "packformat": 0.5
     },
     {
-      "name": "Berg Konig Kek",
+      "name": "Berg König Kék",
       "alcohol": 5.0,
-      "taste": [ "Tipikus német sor", "kicsit vízesebb utóíz", "könnyen iható", "nem túl erős"],
+      "taste": [ "Tipikus német sör", "kicsit vízesebb utóíz", "könnyen iható", "nem túl erős"],
       "origin": "német",
       "type": [ "Lager"],
       "manufacturer": "Van Pur",
@@ -1089,9 +1089,9 @@
       "packformat": 0.5
     },
     {
-      "name": "Berg Konig Zold",
+      "name": "Berg König Zöld",
       "alcohol": 5.2,
-      "taste": [ "Tipikus német sor", "nem túl erős", "könnyen iható", "komlós utóíz"],
+      "taste": [ "Tipikus német sör", "nem túl erős", "könnyen iható", "komlós utóíz"],
       "origin": "német",
       "type": [ "Lager", "Marzen"],
       "manufacturer": "Van Pur",
@@ -1102,7 +1102,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Berg Konig 3,0",
+      "name": "Berg König 3,0",
       "alcohol": 3.0,
       "taste": [ "Vízes", "kerti munkahoz tokeletes"],
       "origin": "lengyel",
@@ -1115,9 +1115,9 @@
       "packformat": 0.5
     },
     {
-      "name": "Berg Konig Premium",
+      "name": "Berg König Premium",
       "alcohol": 5.0,
-      "taste": [ "erős illatú", "enyhén keserű sor"],
+      "taste": [ "erős illatú", "enyhén keserű sör"],
       "origin": "osztrák",
       "type": [ "lager"],
       "manufacturer": "Van Pur",
@@ -1154,7 +1154,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Kobanyai",
+      "name": "Kőbányai",
       "alcohol": 4.3,
       "taste": [ "Vízes", "savanyú", "nem erős", "disznotáp"],
       "origin": "magyar",
@@ -1195,7 +1195,7 @@
     {
       "name": "Kronnenburg 1664",
       "alcohol": 5.0,
-      "taste": [ "Kellemes", "csak enyhén", "alig erezhetoen búzasör jellegu sor"],
+      "taste": [ "Kellemes", "csak enyhén", "alig erezhetoen búzasör jellegu sör"],
       "origin": "francia",
       "type": [ "Ale", "búzasör"],
       "manufacturer": "Carlsberg",
@@ -1208,7 +1208,7 @@
     {
       "name": "Blanc 1664",
       "alcohol": 5.0,
-      "taste": [ "édes", "kellemesen gyümölcsös nyari sor"],
+      "taste": [ "édes", "kellemesen gyümölcsös nyari sör"],
       "origin": "francia",
       "type": [ "Ale", "búzasör"],
       "manufacturer": "Carlsberg",
@@ -1286,7 +1286,7 @@
     {
       "name": "Pécsi Szalon Limited",
       "alcohol": 4.6,
-      "taste": [ "Kisse édes", "enyhe", "kellemes nyari sor"],
+      "taste": [ "Kisse édes", "enyhe", "kellemes nyari sör"],
       "origin": "magyar",
       "type": [ "Lager"],
       "manufacturer": "Pécsi",
@@ -1299,7 +1299,7 @@
     {
       "name": "Praga Premium Pils",
       "alcohol": 4.7,
-      "taste": [ "Tipikus cseh sor", "egyenletesen enyhén keserű"],
+      "taste": [ "Tipikus cseh sör", "egyenletesen enyhén keserű"],
       "origin": "cseh",
       "type": [ "Lager", "Pils"],
       "manufacturer": "Pivovar Samson",
@@ -1440,12 +1440,12 @@
       "packformat": 0.5
     },
     {
-      "name": "Horízont Night Shift 2018",
+      "name": "Horizont Night Shift 2018",
       "alcohol": 10.0,
       "taste": [ "Komplex", "tömény", "nagyon keserű", "kellemes íz"],
       "origin": "magyar",
       "type": [ "Ale", "Stout", "Imperial Stout", "Russian Imparial Stout"],
-      "manufacturer": "Horízont",
+      "manufacturer": "Horizont",
       "consumption": "buzulós",
       "price": "1550",
       "quality": 9.0,
@@ -1505,9 +1505,9 @@
       "packformat": 0.5
     },
     {
-      "name": "Pécsi Premium Pils",
+      "name": "Pécsi Prémium Pils",
       "alcohol": 4.7,
-      "taste": [ "Nagyon enyhe", "erezhetoen szuretlen", "kellemes nyari sor"],
+      "taste": [ "Nagyon enyhe", "erezhetoen szuretlen", "kellemes nyari sör"],
       "origin": "magyar",
       "type": [ "Lager"],
       "manufacturer": "Pécsi",
@@ -1520,7 +1520,7 @@
     {
       "name": "Pécsi Szalon",
       "alcohol": 4.6,
-      "taste": [ "Kicsit vízes", "enyhe könnyed sor", "kellemtlen utóíz"],
+      "taste": [ "Kicsit vízes", "enyhe könnyed sör", "kellemtlen utóíz"],
       "origin": "magyar",
       "type": [ "Lager"],
       "manufacturer": "Pécsi",
@@ -1557,7 +1557,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Hajdu Serhaz Session ALe",
+      "name": "Hajdu Serház Session Ale",
       "alcohol": 4.6,
       "taste": [ "Kellemes","citrusos", "könnyen iható"],
       "origin": "magyar",
@@ -1739,7 +1739,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Szarvasi vilagos sor",
+      "name": "Szarvasi világos sör",
       "alcohol": 5.0,
       "taste": [ "Kellemes", "könnyed", "kicsit édes"],
       "origin": "magyar",
@@ -2246,12 +2246,12 @@
       "packformat": 0.33
     },
     {
-      "name": "Horízont Easy A",
+      "name": "Horizont Easy A",
       "alcohol": 4.5,
       "taste": [ "kellemes", "könnyed", "könnyen iható", "kicsit keserű", "gyümölcsös"],
       "origin": "magyar",
       "type": [ "ale", "APA"],
-      "manufacturer": "Horízont",
+      "manufacturer": "Horizont",
       "consumption": "ivósör",
       "price": 700,
       "quality": 6.5,
@@ -2259,12 +2259,12 @@
       "packformat": 0.33
     },
     {
-      "name": "Horízont Morning Joe",
+      "name": "Horizont Morning Joe",
       "alcohol": 6.0,
       "taste": [ "kellemes", "nagyon kávés", "füstos", "pörkölt íz"],
       "origin": "magyar",
       "type": [ "ale", "stout"],
-      "manufacturer": "Horízont",
+      "manufacturer": "Horizont",
       "consumption": "félig buzulós",
       "price": 800,
       "quality": 8.0,
@@ -2417,7 +2417,7 @@
         "New-England IPA",
         "Double New-England IPA"
       ],
-      "manufacturer": "Horízont",
+      "manufacturer": "Horizont",
       "consumption": "félig buzulós",
       "price": 1080,
       "quality": 7.0,
