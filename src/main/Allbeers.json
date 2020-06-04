@@ -769,7 +769,7 @@
     {
       "name": "Hoegaarden",
       "alcohol": 4.9,
-      "taste": [ "tömény ízvilag", " fűszeres búzasör" ],
+      "taste": [ "tömény íz", " fűszeres búzasör" ],
       "origin": "Begla",
       "type": [ "Ale", "búzasör", "Begla búzasör" ],
       "manufacturer": "Hoegaarden",
@@ -1247,7 +1247,7 @@
     {
       "name": "Tequila sör",
       "alcohol": 6.0,
-      "taste": [ "citromos", " alcohol alig érezhető", " kukoricás utóíz" ],
+      "taste": [ "citromos", " alcohol alig érezhető", "kukoricás utóíz" ],
       "origin": "lengyel",
       "type": [ "Lager", "Tequila lager" ],
       "manufacturer": "Van Pur",
@@ -1325,7 +1325,7 @@
     {
       "name": "AgrarX",
       "alcohol": 8.0,
-      "taste": [ "közepesen keserű", " citrusos", "kicsit pörkölt" ],
+      "taste": [ "közepesen keserű", "citrusos", "kicsit pörkölt" ],
       "origin": "magyar",
       "type": [ "Ale", "IPA", "double IPA" ],
       "consumption": "buzulós",
@@ -1416,7 +1416,7 @@
     {
       "name": "Mad Scientist Monkey Temple",
       "alcohol": 4.6,
-      "taste": [ "Kellemes", "kicsit keserű", " citrusos", " búzasör" ],
+      "taste": [ "Kellemes", "kicsit keserű", "citrusos", " búzasör" ],
       "origin": "magyar",
       "type": [ "Ale", "bajor búzasör" ],
       "manufacturer": "Mad Scientist",
@@ -1442,7 +1442,7 @@
     {
       "name": "Horízont Night Shift 2018",
       "alcohol": 10.0,
-      "taste": [ "Komplex", " tömény", "nagyon keserű", " kellemes ízvilag" ],
+      "taste": [ "Komplex", " tömény", "nagyon keserű", " kellemes íz" ],
       "origin": "magyar",
       "type": [ "Ale", "Stout", "Imperial Stout", "Russian Imparial Stout" ],
       "manufacturer": "Horízont",
@@ -1520,7 +1520,7 @@
     {
       "name": "Pécsi Szalon",
       "alcohol": 4.6,
-      "taste": [ "Kicsit vízes", " enyhe konnyu sor", " kellemtlen utóíz" ],
+      "taste": [ "Kicsit vízes", " enyhe könnyed sor", " kellemtlen utóíz" ],
       "origin": "magyar",
       "type": [ "Lager" ],
       "manufacturer": "Pécsi",
@@ -1572,7 +1572,7 @@
     {
       "name": "Hombre Corn",
       "alcohol": 4.8,
-      "taste": [ "könnyen iható", "édes, " kukoricás íz" ],
+      "taste": [ "könnyen iható", "édes", "kukoricás íz" ],
       "origin": "magyar",
       "type": [ "Lager", "Kukoricasor" ],
       "manufacturer": "Sörművek",
@@ -1585,7 +1585,7 @@
     {
       "name": "Tokyo Lemonade",
       "alcohol": 4.2,
-      "taste": [ "Kellemes", "kicsit keserű", " belga élesztős", " citrusos" ],
+      "taste": [ "Kellemes", "kicsit keserű", "belga élesztős", "citrusos" ],
       "origin": "magyar",
       "type": [ "Ale", "belga", "búzasör", "belga búzasör" ],
       "manufacturer": "Mad Scientist",
@@ -1611,7 +1611,7 @@
     {
       "name": "Grimmbergen Double",
       "alcohol": 6.5,
-      "taste": [ "Konnyu", " barna sörös", " erős karamelles ízvilag", " malátás", "könnyen iható" ],
+      "taste": [ "könnyed", "barna sörös", "erős karamelles íz", "malátás", "könnyen iható" ],
       "origin": "francia",
       "type": [ "Ale", "Belga", "Barna belga" ],
       "manufacturer": "Grimbergen",
@@ -1741,7 +1741,7 @@
     {
       "name": "Szarvasi vilagos sor",
       "alcohol": 5.0,
-      "taste": [ "Kellemes", " konnyu", "kicsit édes" ],
+      "taste": [ "Kellemes", " könnyed", "kicsit édes" ],
       "origin": "magyar",
       "type": [ "Lager" ],
       "manufacturer": "Szarvasi Atta Kft",
