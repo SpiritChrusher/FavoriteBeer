@@ -39,7 +39,7 @@
       "packformat": 0.5
     },
 	{
-      "name": "Laza Moral",
+      "name": "Laza Morál",
       "alcohol": 4.6,
       "taste": ["kellemes", "könnyen_iható", "laza", "gyümölcsös"],
       "origin": "magyar ",
@@ -2194,7 +2194,7 @@
       "packformat": 0.4
     },
     {
-      "name": "Bandiba",
+      "name": "Szent András Bandibá",
       "alcohol": 6.0,
       "taste": [ "kellemes", "komlos", "gyümolcsos", "testes", "kozepesen_keseru" ],
       "origin": "magyar",
@@ -2207,7 +2207,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Kíserleti Nyul Calm Storm",
+      "name": "Kísérleti Nyúl Calm Storm",
       "alcohol": 9.8,
       "taste": [ "kellemes", "kaves", "tomeny", "kicsit_edes", "kicsit_csokis", "nem_szensavas" ],
       "origin": "magyar",
