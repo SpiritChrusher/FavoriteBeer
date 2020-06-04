@@ -1752,12 +1752,12 @@
       "packformat": 0.5
     },
     {
-      "name": "Szent Andras Rettegett Ivan 2018",
+      "name": "Szent András Rettegett Iván 2018",
       "alcohol": 9.0,
       "taste": [ "Karakteres", " karamelles", " etcsokis", " kellems izvilag", " tomeny imperial stout" ],
       "origin": "magyar",
       "type": [ "Ale", "Stout", "Imperial Stout", "Russian Imperial Stout" ],
-      "manufacturer": "Szent Andras",
+      "manufacturer": "Szent András",
       "consumption": "buzulos",
       "price": "1150",
       "quality": 9.0,
@@ -1947,12 +1947,12 @@
       "packformat": 0.33
     },
     {
-      "name": "Szent Andras Hatharom",
+      "name": "Szent András Hathárom",
       "alcohol": 4.9,
       "taste": [ "kellemes", "karamellas", "konnyen_ihato" ],
       "origin": "magyar",
       "type": [ "ale", "porter" ],
-      "manufacturer": "Szent Andras",
+      "manufacturer": "Szent András",
       "consumption": "felig buzulos",
       "price": 700,
       "quality": 7.5,
@@ -2077,12 +2077,12 @@
       "packformat": 0.33
     },
     {
-      "name": "Rettegett Ivan 2019",
+      "name": "Szent András Rettegett Ivan 2019",
       "alcohol": 10.5,
       "taste": [ "kellemes", "tomeny", "kaves", "csokis" ],
       "origin": "",
       "type": [ "ale", "stout", "imperial_stout", "russian_imperial_stout" ],
-      "manufacturer": "Szent Andras",
+      "manufacturer": "Szent András",
       "consumption": "buzulos",
       "price": 1000,
       "quality": 9.0,
@@ -2116,7 +2116,7 @@
       "packformat": 0.5
     },
     {
-      "name": "Szuretlen Csíki",
+      "name": "Szűretlen Csíki",
       "alcohol": 6.0,
       "taste": [ "konnyen_ihato", "kozepesen_keseru", "kozepesen_szensavas", "elesztos" ],
       "origin": "erdelyi",
@@ -2129,12 +2129,12 @@
       "packformat": 0.5
     },
     {
-      "name": "Zirci Apatsagi  Aurora",
+      "name": "Zírci Apátsági  Aurora",
       "alcohol": 5.8,
       "taste": [ "konnyen_ihato", "kicsit_keseru", "vegyes_iz", "kicsit_felrement" ],
       "origin": "magyar",
       "type": [ "lager", "felbarna_lager" ],
-      "manufacturer": "Zirci Apatsag",
+      "manufacturer": "Zírci Apátság",
       "consumption": "ivosor",
       "price": 700,
       "quality": 4.5,
@@ -2142,12 +2142,12 @@
       "packformat": 0.33
     },
     {
-      "name": "Zirci Apatsagi Belga",
+      "name": "Zírci Apátsági Belga",
       "alcohol": 6.0,
       "taste": [ "kellemes", "konnyen_ihato", "nem felbarna", "kicsit_edes", "nem_gyümolcsos" ],
       "origin": "magyar",
       "type": [ "ale", "belga" ],
-      "manufacturer": "Zirci Apatsag",
+      "manufacturer": "Zírci Apátság",
       "consumption": "felig buzulos",
       "price": 700,
       "quality": 6.5,
