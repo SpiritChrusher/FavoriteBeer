@@ -1,6 +1,6 @@
 [
 	{
-      "name": "Herr Lager ",
+      "name": "Herr Lager",
       "alcohol": 4.5,
       "taste": ["kellemes", "könnyen_iható", "citrusos", "komlós", "kicsit_belga", "kicsit_IPA", "kicsit_lager", "közepesen_keserű" ],
       "origin": "magyar",
@@ -19,7 +19,7 @@
       "origin": "magyar ",
       "type": ["ale", "Búza", "saison_witbier"],
       "manufacturer": "Horizont",
-      "consumption": "félig_Buzulós/ivósör",
+      "consumption": "félig_Buzulós",
       "price": 690,
       "quality": 6.5,
       "acquisition": ["online"],
