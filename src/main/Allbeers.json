@@ -2,7 +2,7 @@
 	{
       "name": "Herr Lager",
       "alcohol": 4.5,
-      "taste": ["kellemes", "könnyen iható"", "citrusos", "komlós", "kicsit belga", "kicsit IPA", "kicsit lager", "közepesen keserű" ],
+      "taste": ["kellemes", "könnyen iható", "citrusos", "komlós", "kicsit belga", "kicsit IPA", "kicsit lager", "közepesen keserű" ],
       "origin": "magyar",
       "type": ["lager", "hidegkomlós lager"],
       "manufacturer": "Horízont",
@@ -15,7 +15,7 @@
 	{
       "name": "Sailor Belle",
       "alcohol": 6.0,
-      "taste": ["kellemes", "könnyen iható"", "gyümölcsös", "belga Búza", "kicsit keserű"],
+      "taste": ["kellemes", "könnyen iható", "gyümölcsös", "belga Búza", "kicsit keserű"],
       "origin": "magyar ",
       "type": ["ale", "Búza", "saison witbier"],
       "manufacturer": "Horízont",
@@ -28,7 +28,7 @@
 	{
       "name": "Alevation Saison",
       "alcohol": 4.5,
-      "taste": ["kellemes", "könnyen iható"", "fűszeres", "kicsit keserű"],
+      "taste": ["kellemes", "könnyen iható", "fűszeres", "kicsit keserű"],
       "origin": "magyar ",
       "type": ["ale", "saison ale"],
       "manufacturer": "Zirci apátság",
@@ -41,7 +41,7 @@
 	{
       "name": "Laza Morál",
       "alcohol": 4.6,
-      "taste": ["kellemes", "könnyen iható"", "laza", "gyümölcsös"],
+      "taste": ["kellemes", "könnyen iható", "laza", "gyümölcsös"],
       "origin": "magyar ",
       "type": ["ale", "IPA", "Sessiom IPA"],
       "manufacturer": "HopTop",
@@ -93,7 +93,7 @@
 	{
       "name": "Playground Marzen",
       "alcohol": 6.0,
-      "taste": ["kellemes", "könnyed", "könnyen iható"", "kicsit keserű", "érdekes íz"],
+      "taste": ["kellemes", "könnyed", "könnyen iható", "kicsit keserű", "érdekes íz"],
       "origin": "magyar ",
       "type": ["lager", "marzen"],
       "manufacturer": "Horízont",
@@ -106,7 +106,7 @@
 	{
       "name": "Arany Korso",
       "alcohol": 4.0,
-      "taste": ["közepesen rossz", "könnyen iható"", "kicsit édes", "kicsit keserű", "kicsit vízes"],
+      "taste": ["közepesen rossz", "könnyen iható", "kicsit édes", "kicsit keserű", "kicsit vízes"],
       "origin": "magyar ",
       "type": ["ale", "IPA", "Amerikai IPA"],
       "manufacturer": "Van Pur",
@@ -132,7 +132,7 @@
 	{
       "name": "American Beauty",
       "alcohol": 5.6,
-      "taste": ["kellemes", "könnyen iható"", "gyümölcsös", "spicy", "kicsit keserű"],
+      "taste": ["kellemes", "könnyen iható", "gyümölcsös", "spicy", "kicsit keserű"],
       "origin": "magyar ",
       "type": ["ale", "IPA", "American IPA"],
       "manufacturer": "Monyo",
@@ -145,7 +145,7 @@
 	{
       "name": "Budapest IPA",
       "alcohol": 6.0,
-      "taste": ["kellemes", "könnyen iható"", "moderately caramel", "kicsit keserű", "érdekes íz"],
+      "taste": ["kellemes", "könnyen iható", "moderately caramel", "kicsit keserű", "érdekes íz"],
       "origin": "magyar ",
       "type": ["ale", "IPA"],
       "manufacturer": "Budapestbeer",
@@ -158,7 +158,7 @@
     {
       "name": "Primator 16",
       "alcohol": 7.5,
-      "taste": ["kellemes", "könnyen iható"", "nem keserű", "kicsit édes", "kicsit gyümölcsös" ],
+      "taste": ["kellemes", "könnyen iható", "nem keserű", "kicsit édes", "kicsit gyümölcsös" ],
       "origin": "Belga",
       "type": ["lager", "strong lager"],
       "manufacturer": "Primator",
@@ -171,7 +171,7 @@
       {
       "name": "Paulaner Munchener Hell",
       "alcohol": 4.9, 
-      "taste": ["kellemes", "könnyen iható"", "kicsit keserű", "könnyed", "kicsit édes", "komlós", "malátás", "élesztős íz"],
+      "taste": ["kellemes", "könnyen iható", "kicsit keserű", "könnyed", "kicsit édes", "komlós", "malátás", "élesztős íz"],
       "origin": "német",
       "type": ["lager", "munchener lager"],
       "manufacturer": "Paulaner braurey",
@@ -184,7 +184,7 @@
      {
       "name": "Gallica Pils",
       "alcohol": 4.7,
-      "taste": ["kellemes", "könnyen iható"", "nem keserű", "könnyed", "kicsit gyümölcsös" ],
+      "taste": ["kellemes", "könnyen iható", "nem keserű", "könnyed", "kicsit gyümölcsös" ],
       "origin": "Belga",
       "type": ["lager", "Pils"],
       "manufacturer": "Brasserie de Silly",
@@ -197,7 +197,7 @@
      {
       "name": "Krusovice Svetle",
       "alcohol": 4.2,
-      "taste": ["kellemes", "könnyen iható"", "kicsit keserű", "könnyed" ],
+      "taste": ["kellemes", "könnyen iható", "kicsit keserű", "könnyed" ],
       "origin": "Cseh",
       "type": ["lager"],
       "manufacturer": "borsodi sörgyár",
@@ -223,7 +223,7 @@
     {
       "name": "Wernesgrüner",
       "alcohol": 4.9,
-      "taste": ["kellemes", "könnyen iható"", "kicsit édes", "kicsit keserű", "száraz"],
+      "taste": ["kellemes", "könnyen iható", "kicsit édes", "kicsit keserű", "száraz"],
       "origin": "német",
       "type": ["lager", "pils"],
       "manufacturer": "Wernesgruner Brauerei",
@@ -248,7 +248,7 @@
     }, {
       "name": "Mad Scientist Popstar",
       "alcohol": 6.0,
-      "taste": [ "közepesen keserű", "könnyen iható"", "kellemes" ],
+      "taste": [ "közepesen keserű", "könnyen iható", "kellemes" ],
       "origin": "magyar",
       "type": [ "Ale", "IPA", "Gluténmentes IPA" ],
       "manufacturer": "Mad Scientist",
@@ -261,7 +261,7 @@
     {
       "name": "Mad Scientist Smooth Hoperator",
       "alcohol": 6.0,
-      "taste": [ "kellemes", "könnyed", "könnyen iható"", "gyümölcsös", "frissito"],
+      "taste": [ "kellemes", "könnyed", "könnyen iható", "gyümölcsös", "frissito"],
       "origin": "magyar",
       "type": [ "ale", "ipa", "New-England IPA"],
       "manufacturer": "Mad Scientist",
@@ -326,7 +326,7 @@
     {
       "name": "ARGUS Maestic",
       "alcohol": 4.8,
-      "taste": [ "könnyen iható"", "nem túl erős", "korrekt lager" ],
+      "taste": [ "könnyen iható", "nem túl erős", "korrekt lager" ],
       "origin": "cseh",
       "type": [ "Lager" ],
       "manufacturer": "Brauerei Nemo Namelos",
@@ -340,7 +340,7 @@
     {
       "name": "ARGUS Piros",
       "alcohol": 5.0,
-      "taste": [ "Tipikus lager", "nem túl keserű", "nem túl erős", "könnyen iható"" ],
+      "taste": [ "Tipikus lager", "nem túl keserű", "nem túl erős", "könnyen iható" ],
       "origin": "cseh",
       "type": [ "Lager" ],
       "manufacturer": "Brauerei Nemo Namelos",
@@ -353,7 +353,7 @@
     {
       "name": "ARGUS 16 Strong",
       "alcohol": 7.0,
-      "taste": [ "könnyen iható"", "karamelles", "kicsit keserű" ],
+      "taste": [ "könnyen iható", "karamelles", "kicsit keserű" ],
       "origin": "cseh",
       "type": [ "Lager", "barna Lager" ],
       "manufacturer": "Brauerei Nemo Namelos",
@@ -366,7 +366,7 @@
     {
       "name": "ARGUS Szürke",
       "alcohol": 4.0,
-      "taste": [ "Gyenge lager", "nem túl keserű", "nagyon könnyen iható"" ],
+      "taste": [ "Gyenge lager", "nem túl keserű", "nagyon könnyen iható" ],
       "origin": "cseh",
       "type": [ "Lager" ],
       "manufacturer": "Brauerei Nemo Namelos",
@@ -431,7 +431,7 @@
     {
       "name": "Bocskai Ír Vörös",
       "alcohol": 5.7,
-      "taste": [ "kellemes", "kicsit keserű", "könnyen iható" vörös sör íz" ],
+      "taste": [ "kellemes", "kicsit keserű", "könnyen iható", "vörös sör íz" ],
       "origin": "magyar",
       "type": [ "Ale", "Red Ale" ],
       "manufacturer": "Bocskai Freedom",
@@ -497,7 +497,7 @@
     {
       "name": "Csíki Szuretlen",
       "alcohol": 5.0,
-      "taste": [ "Kellemes termeszetes íz", " enyhén komlós", "könnyen iható"" ],
+      "taste": [ "Kellemes termeszetes íz", " enyhén komlós", "könnyen iható" ],
       "origin": "Székelyföld",
       "type": [ "Lager" ],
       "manufacturer": "Csíki ",
@@ -523,7 +523,7 @@
     {
       "name": "De Helder Bronz",
       "alcohol": 3.5,
-      "taste": [ "kicsit keserű", "kicsit vízes", "könnyen iható"" ],
+      "taste": [ "kicsit keserű", "kicsit vízes", "könnyen iható" ],
       "type": [ "Lager" ],
       "origin": "lengyel",
       "manufacturer": "Van Pur",
@@ -536,7 +536,7 @@
     {
       "name": "De Helder Unfiltered",
       "alcohol": 5.0,
-      "taste": [ "könnyen iható"", "kellemes", "kicsit keserű" ],
+      "taste": [ "könnyen iható", "kellemes", "kicsit keserű" ],
       "type": [ "Lager" ],
       "origin": "lengyel",
       "manufacturer": "Van Pur",
@@ -705,7 +705,7 @@
     {
       "name": "Deep Zold",
       "alcohol": 4.0,
-      "taste": [ "közepesen vízes", " mar iható" enyhe lager" ],
+      "taste": [ "közepesen vízes", " mar iható", "enyhe lager" ],
       "origin": "horvath",
       "type": [ "Lager" ],
       "manufacturer": "Pivovara Daruvar",
@@ -718,8 +718,8 @@
     {
       "name": "Desperados Original",
       "alcohol": 5.9,
-      "taste": [ "Citrusos", " nem igazan tequilas", " jol csuszik" ],
-      "origin": "Mexico",
+      "taste": [ "Citrusos", "nem igazan tequilas", "jól csúszik" ],
+      "origin": "Mexikó",
       "type": [ "Ale" ],
       "manufacturer": "Brau Union osterreich",
       "consumption": "félig ivósör",
@@ -1169,7 +1169,7 @@
     {
       "name": "Borsodi",
       "alcohol": 4.5,
-      "taste": [ "közepesen keserű", "könnyen iható"" ],
+      "taste": [ "közepesen keserű", "könnyen iható" ],
       "origin": "magyar",
       "type": [ "Lager" ],
       "manufacturer": "Borsodi ",
@@ -1182,7 +1182,7 @@
     {
       "name": "Borsodi Mester",
       "alcohol": 5.0,
-      "taste": [ "édes íz", "komlós keserű utóíz", "könnyen iható"", "nem túl erős" ],
+      "taste": [ "édes íz", "komlós keserű utóíz", "könnyen iható", "nem túl erős" ],
       "origin": "magyar",
       "type": [ "Lager" ],
       "manufacturer": "Borsodi ",
@@ -1403,7 +1403,7 @@
     {
       "name": "Lobkowicz Lager",
       "alcohol": 4.7,
-      "taste": [ "közepesen keserű", "csehes íz", "könnyen iható"" ],
+      "taste": [ "közepesen keserű", "csehes íz", "könnyen iható" ],
       "origin": "cseh",
       "type": [ "Lager" ],
       "manufacturer": "Pivovary Lobkowicz",
@@ -1559,7 +1559,7 @@
     {
       "name": "Hajdu Serhaz Session ALe",
       "alcohol": 4.6,
-      "taste": [ "Kellemes","citrusos", "könnyen iható"" ],
+      "taste": [ "Kellemes","citrusos", "könnyen iható" ],
       "origin": "magyar",
       "type": [ "Ale", "Session Ale" ],
       "manufacturer": "Hajdu Serhaz",
@@ -1572,7 +1572,7 @@
     {
       "name": "Hombre Corn",
       "alcohol": 4.8,
-      "taste": [ "könnyen iható"", "édes, " kukoricás íz" ],
+      "taste": [ "könnyen iható", "édes, " kukoricás íz" ],
       "origin": "magyar",
       "type": [ "Lager", "Kukoricasor" ],
       "manufacturer": "Sörművek",
@@ -1663,7 +1663,7 @@
     {
       "name": "Staropramen",
       "alcohol": 5.0,
-      "taste": [ "kicsit keserű", "szénsavas", "könnyen iható"" ],
+      "taste": [ "kicsit keserű", "szénsavas", "könnyen iható" ],
       "origin": "magyar",
       "type": [ "Lager" ],
       "manufacturer": "Borsodi",
@@ -1793,7 +1793,7 @@
     {
       "name": "Tesco Finest Ale",
       "alcohol": 5.2,
-      "taste": [ "Kellemes", "kávés", "könnyen iható"" ],
+      "taste": [ "Kellemes", "kávés", "könnyen iható" ],
       "origin": "angol",
       "type": [ "Ale" ],
       "manufacturer": "Pivovar Karpat",
@@ -1858,7 +1858,7 @@
     {
       "name": "Warsteiner",
       "alcohol": 4.8,
-      "taste": [ "könnyen iható"", "közepesen komlós íz", " nem keserű" ],
+      "taste": [ "könnyen iható", "közepesen komlós íz", " nem keserű" ],
       "origin": "német",
       "type": [ "Lager" ],
       "manufacturer": "Warsteiner Brauerei",
@@ -1871,7 +1871,7 @@
     {
       "name": "Maltman Gyomber",
       "alcohol": 5.2,
-      "taste": [ "gyümölcsös", "könnyen iható"", "kellemes", "édes" ],
+      "taste": [ "gyümölcsös", "könnyen iható", "kellemes", "édes" ],
       "origin": "szlovák",
       "type": [ "Ale", "bodza Ale" ],
       "manufacturer": "Maltman",
@@ -1884,7 +1884,7 @@
     {
       "name": "Sun And Steel",
       "alcohol": 4.8,
-      "taste": [ "kellemes", "könnyen iható"", "akes utóízen", "érdekes íz" ],
+      "taste": [ "kellemes", "könnyen iható", "akes utóízen", "érdekes íz" ],
       "origin": "angol",
       "type": [ "lager" ],
       "manufacturer": "Iron Maiden",
@@ -1923,7 +1923,7 @@
     {
       "name": "Fuller's London Porter",
       "alcohol": 5.4,
-      "taste": [ "kellemes", "karakteres", "karamelles", "kicsit füstos", "közepesen könnyen iható"" ],
+      "taste": [ "kellemes", "karakteres", "karamelles", "kicsit füstos", "közepesen könnyen iható" ],
       "origin": "angol",
       "type": [ "Ale", "Porter" ],
       "manufacturer": "Fuller's London",
@@ -1949,7 +1949,7 @@
     {
       "name": "Szent András Hathárom",
       "alcohol": 4.9,
-      "taste": [ "kellemes", "karamelles", "könnyen iható"" ],
+      "taste": [ "kellemes", "karamelles", "könnyen iható" ],
       "origin": "magyar",
       "type": [ "ale", "porter" ],
       "manufacturer": "Szent András",
@@ -1962,7 +1962,7 @@
     {
       "name": "Madhouse",
       "alcohol": 5.5,
-      "taste": [ "kicsit fanyar", "kicsit keserű", "citrusos", "kellemes", "könnyen iható"" ],
+      "taste": [ "kicsit fanyar", "kicsit keserű", "citrusos", "kellemes", "könnyen iható" ],
       "origin": "magyar",
       "type": [ "ale", "IPA", "New-England IPA" ],
       "manufacturer": "Mad Scientist",
@@ -2001,7 +2001,7 @@
     {
       "name": "Floreffe",
       "alcohol": 6.3,
-      "taste": [ "gyümölcsös", "nem tul erős", "kicsit bananos utóíz", "könnyen iható"" ],
+      "taste": [ "gyümölcsös", "nem tul erős", "kicsit bananos utóíz", "könnyen iható" ],
       "origin": "belga",
       "type": [ "ale", "belga" ],
       "manufacturer": "Lefebvre",
@@ -2014,7 +2014,7 @@
     {
       "name": "Sterling Blonde",
       "alcohol": 4.2,
-      "taste": [ "érdekes íz", "könnyen iható"", "kellemetlen utóíz", "kukoricas íz" ],
+      "taste": [ "érdekes íz", "könnyen iható", "kellemetlen utóíz", "kukoricas íz" ],
       "origin": "francia",
       "type": [ "lager" ],
       "manufacturer": "Saint-Omer",
@@ -2027,7 +2027,7 @@
     {
       "name": "Blanche de Namur",
       "alcohol": 4.5,
-      "taste": [ "kellemes", "könnyen iható"", "enyhe búzasör íz" ],
+      "taste": [ "kellemes", "könnyen iható", "enyhe búzasör íz" ],
       "origin": "belga",
       "type": [ "ale", "belga búzasör" ],
       "manufacturer": "Du Bocq",
@@ -2040,7 +2040,7 @@
     {
       "name": "Beertailor Pils",
       "alcohol": 5.0,
-      "taste": [ "kellemes", "könnyen iható"", "kenyeres elesztos", "kicsit szénsavas", "gyümölcsös" ],
+      "taste": [ "kellemes", "könnyen iható", "kenyeres elesztos", "kicsit szénsavas", "gyümölcsös" ],
       "origin": "magyar",
       "type": [ "lager", "amerikai lager", "pils" ],
       "manufacturer": "Beertailor",
@@ -2053,7 +2053,7 @@
     {
       "name": "Beertailor Porter",
       "alcohol": 5.0,
-      "taste": [ "kellemes", "kakaos", "kekszes", "kicsit keserű", "kremes", "közepesen könnyen iható"" ],
+      "taste": [ "kellemes", "kakaos", "kekszes", "kicsit keserű", "kremes", "közepesen könnyen iható" ],
       "origin": "magyar",
       "type": [ "ale", "porter" ],
       "manufacturer": "Beertailor",
@@ -2092,7 +2092,7 @@
     {
       "name": "HopTop Codebreakers of the Universe",
       "alcohol": 6.0,
-      "taste": [ "kellemes", "könnyen iható"", "gyümölcsös", "fűszeres", "könnyed" ],
+      "taste": [ "kellemes", "könnyen iható", "gyümölcsös", "fűszeres", "könnyed" ],
       "origin": "magyar",
       "type": [ "ale", "IPA", "New-England IPA" ],
       "manufacturer": "HopTop",
@@ -2105,7 +2105,7 @@
     {
       "name": "Király",
       "alcohol": 4.6,
-      "taste": [ "kellemes", "könnyen iható"", "közepesen komlos", "nem szénsavas", "kicsit keserű" ],
+      "taste": [ "kellemes", "könnyen iható", "közepesen komlos", "nem szénsavas", "kicsit keserű" ],
       "origin": "magyar",
       "type": [ "lager" ],
       "manufacturer": "Sörművek",
@@ -2118,7 +2118,7 @@
     {
       "name": "Szűretlen Csíki",
       "alcohol": 6.0,
-      "taste": [ "könnyen iható"", "közepesen keserű", "közepesen szénsavas", "élesztős" ],
+      "taste": [ "könnyen iható", "közepesen keserű", "közepesen szénsavas", "élesztős" ],
       "origin": "erdelyi",
       "type": [ "lager" ],
       "manufacturer": "Csíki ",
@@ -2131,7 +2131,7 @@
     {
       "name": "Zírci Apátsági  Aurora",
       "alcohol": 5.8,
-      "taste": [ "könnyen iható"", "kicsit keserű", "vegyes íz", "kicsit félrement" ],
+      "taste": [ "könnyen iható", "kicsit keserű", "vegyes íz", "kicsit félrement" ],
       "origin": "magyar",
       "type": [ "lager", "félbarna lager" ],
       "manufacturer": "Zírci Apátság",
@@ -2144,7 +2144,7 @@
     {
       "name": "Zírci Apátsági Belga",
       "alcohol": 6.0,
-      "taste": [ "kellemes", "könnyen iható"", "nem félbarna", "kicsit édes", "nem gyümölcsös" ],
+      "taste": [ "kellemes", "könnyen iható", "nem félbarna", "kicsit édes", "nem gyümölcsös" ],
       "origin": "magyar",
       "type": [ "ale", "belga ale" ],
       "manufacturer": "Zírci Apátság",
@@ -2170,7 +2170,7 @@
     {
       "name": "Mead Scientist Firefly",
       "alcohol": 4.0,
-      "taste": [ "édes", "kicsit savanyú", "könnyen iható"", "nem erős", "nem szénsavas" ],
+      "taste": [ "édes", "kicsit savanyú", "könnyen iható", "nem erős", "nem szénsavas" ],
       "origin": "magyar",
       "type": [ "ale", "mezsor" ],
       "manufacturer": "Mad Scientist",
@@ -2222,7 +2222,7 @@
     {
       "name": "Young's Double Chocolate Stout",
       "alcohol": 5.2,
-      "taste": [ "kellemes", "csokis", "könnyen iható"", "kicsit keserű" ],
+      "taste": [ "kellemes", "csokis", "könnyen iható", "kicsit keserű" ],
       "origin": "angol",
       "type": [ "ale", "stout", "chocolate stout" ],
       "manufacturer": "Wells & Young's",
@@ -2235,7 +2235,7 @@
     {
       "name": "HopTop Sunset",
       "alcohol": 5.7,
-      "taste": [ "gyümölcsös", "keserű", "kicsit teás", "könnyen iható"", "kellemes" ],
+      "taste": [ "gyümölcsös", "keserű", "kicsit teás", "könnyen iható", "kellemes" ],
       "origin": "magyar",
       "type": [ "ale", "IPA", "East-Coast IPA" ],
       "manufacturer": "HopTop",
@@ -2248,7 +2248,7 @@
     {
       "name": "Horízont Easy A",
       "alcohol": 4.5,
-      "taste": [ "kellemes", "könnyed", "könnyen iható"", "kicsit keserű", "gyümölcsös" ],
+      "taste": [ "kellemes", "könnyed", "könnyen iható", "kicsit keserű", "gyümölcsös" ],
       "origin": "magyar",
       "type": [ "ale", "APA" ],
       "manufacturer": "Horízont",
@@ -2326,7 +2326,7 @@
     {
       "name": "Szent András Szilvás",
       "alcohol": 3.7,
-      "taste": [ "könnyen iható"", "gyümölcsös", "édes", "nem keserű" ],
+      "taste": [ "könnyen iható", "gyümölcsös", "édes", "nem keserű" ],
       "origin": "magyar",
       "type": [ "lager", "szilvás lager" ],
       "manufacturer": "Szent András",
@@ -2339,7 +2339,7 @@
     {
       "name": "Fehér Nyúl Stout",
       "alcohol": 4.5,
-      "taste": [ "kávés", "könnyen iható"", "pörkölt íz" ],
+      "taste": [ "kávés", "könnyen iható", "pörkölt íz" ],
       "origin": "magyar",
       "type": [ "ale", "stout" ],
       "manufacturer": "Fehér Nyúl",
@@ -2352,7 +2352,7 @@
     {
       "name": "Szent András Vári Nővérek",
       "alcohol": 4.9,
-      "taste": [ "könnyen iható"", "citrusos", "frissíto", "kellemes", "kicsit keserű", "komlós" ],
+      "taste": [ "könnyen iható", "citrusos", "frissíto", "kellemes", "kicsit keserű", "komlós" ],
       "origin": "magyar",
       "type": [ "ale", "APA" ],
       "manufacturer": "Szent András",
@@ -2365,7 +2365,7 @@
     {
       "name": "Monyo Bipolar Bear",
       "alcohol": 6.1,
-      "taste": [ "könnyen iható"", "gyümölcsös", "kellemes", "kicsit keserű", "búzasoö íz" ],
+      "taste": [ "könnyen iható", "gyümölcsös", "kellemes", "kicsit keserű", "búzasoö íz" ],
       "origin": "magyar",
       "type": [ "ale", "IPA", "white IPA" ],
       "manufacturer": "Monyo",
@@ -2391,7 +2391,7 @@
     {
       "name": "Pink Killer",
       "alcohol": 5.0,
-      "taste": [ "édes", "kicsit gyümölcsös", "nem keserű", "kicsit szénsavas", "könnyen iható"" ],
+      "taste": [ "édes", "kicsit gyümölcsös", "nem keserű", "kicsit szénsavas", "könnyen iható" ],
       "origin": "belga",
       "type": [ "ale", "belga ale" ],
       "manufacturer": "Brasserie de Silly",
