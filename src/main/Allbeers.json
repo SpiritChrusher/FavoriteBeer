@@ -39,16 +39,16 @@
       "packformat": 0.5
     },
 	{
-      "name": "Laza Morál",
+      "name": "Laza Moral",
       "alcohol": 4.6,
       "taste": ["kellemes", "könnyen_iható", "laza", "gyümölcsös"],
       "origin": "magyar ",
-      "type": ["ale", "IPA", "Sessiom_IPA],
+      "type": ["ale", "IPA", "Sessiom_IPA"],
       "manufacturer": "HopTop",
       "consumption": "Ivósör",
       "price": 750,
       "quality": 7.5,
-      "acquisition": 6.5 ["online" ,"InterSpar "],
+      "acquisition": 6.5 ["online" ,"InterSpar"],
       "packformat": 0.5
     },
 	{
