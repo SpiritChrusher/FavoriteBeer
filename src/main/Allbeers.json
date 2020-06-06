@@ -11,7 +11,19 @@
       "quality": 6.0,
       "acquisition": ["Online"],
       "packformat": 0.33
-    },
+    },{
+      "name": "Mad Scientist Mango Bay",
+      "alcohol": 5.2,
+      "taste": ["kellemes", "könnyen iható", "könnyed", "gyümölcsös", "nagyon mangós íz"],
+      "origin": "magyar",
+      "type": ["ale", "Mango Milkshake Pale Ale "],
+      "manufacturer": "Mad Scientist",
+      "consumption": "Ivósör", 
+      "price": 900,
+      "quality": 6.0,
+      "acquisition": ["Online", "InterSpar"],
+      "packformat": 0.44
+    }, 
 	{
     "name": "Frisch Fassl",
     "alcohol": 3.0,
@@ -693,7 +705,7 @@
       "name": "F",
       "alcohol": 5.0,
       "taste": [ "kellemesen keserű", "könnyen iható", "finom"],
-      "origin": "Belga",
+      "origin": "ausztrál",
       "type": [ "Lager"],
       "manufacturer": "Foster's",
       "consumption": "ivósör",
