@@ -1,4 +1,17 @@
 [
+{
+      "name": "Horizont Rebel Berry",
+      "alcohol": 4.5,
+      "taste": ["savanyú ", "nagyon gyümölcsös","nem keserű" ],
+      "origin": "magyar",
+      "type": ["Ale", "sour Ale", "fruity sour ale"],
+      "manufacturer": "Horizont",
+      "consumption": "Ivósör",
+      "price": 900,
+      "quality": 6.0,
+      "acquisition": ["Online"],
+      "packformat": 0.33
+    },
 	{
       "name": "Herr Lager",
       "alcohol": 4.5,
