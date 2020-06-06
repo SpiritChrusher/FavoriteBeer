@@ -11,6 +11,18 @@
       "quality": 6.0,
       "acquisition": ["Online"],
       "packformat": 0.33
+    },{
+      "name": "Szent András Magyar Vándor",
+      "alcohol": 5.6,
+      "taste": ["könnyen iható", "kicsit keserű","komplex"],
+      "origin": "magyar",
+      "type": ["Ale", "lager" ],
+      "manufacturer": "Szent András sörfőzde",
+      "consumption": "Ivósör",
+      "price": 790,
+      "quality": 6.0,
+      "acquisition": ["Online","InterSpar"],
+      "packformat": 0.33
     },
 	{
       "name": "Herr Lager",
