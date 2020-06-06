@@ -11,7 +11,8 @@
       "quality": 6.0,
       "acquisition": ["Online"],
       "packformat": 0.33
-    },{
+    },
+{
       "name": "Mad Scientist Mango Bay",
       "alcohol": 5.2,
       "taste": ["kellemes", "könnyen iható", "könnyed", "gyümölcsös", "nagyon mangós íz"],
@@ -23,7 +24,19 @@
       "quality": 6.0,
       "acquisition": ["Online", "InterSpar"],
       "packformat": 0.44
-    }, 
+    }, {
+      "name": "Shipyard",
+      "alcohol": 5.0,
+      "taste": ["kellemes","konnyen iható", "komlós","kicsit keserű", "száraz"],
+      "origin": "angol",
+      "type": ["ale", "IPA", "Amerikai IPA"],
+      "manufacturer": "Marston's Brewery",
+      "consumption": "ivósör",
+      "price": 910,
+      "quality": 6.5,
+      "acquisition": ["Online"],
+      "packformat": 0.5
+    },
 	{
     "name": "Frisch Fassl",
     "alcohol": 3.0,
