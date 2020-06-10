@@ -4,7 +4,7 @@
       "alcohol": 9.0,
       "taste": ["kellemes", "kicsit édes", "karamelles íz" ],
       "origin": "magyar",
-      "type": ["lager", "bak", duplabak"],
+      "type": ["lager", "bak", "duplabak"],
       "manufacturer": "Szent András sörfőzde",
       "consumption": "Buzulós",
       "price": 900,
@@ -15,7 +15,7 @@
 {
       "name": "Horizont Rebel Berry",
       "alcohol": 4.5,
-      "taste": ["savanyú ", "nagyon gyümölcsös","nem keserű" ],
+      "taste": ["savanyú", "nagyon gyümölcsös","nem keserű" ],
       "origin": "magyar",
       "type": ["Ale", "sour Ale", "fruity sour ale"],
       "manufacturer": "Horizont",
