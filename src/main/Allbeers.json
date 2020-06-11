@@ -13,6 +13,19 @@
       "packformat": 0.33
     },
 {
+      "name": "Szent András Szilvás Sör",
+      "alcohol": 3.7,
+      "taste": ["kellemes" ,"nem keserű", "könnyen iható", "frissítő", "könnyed", "nagyon gyümölcsös" ],
+      "origin": "magyar",
+      "type": ["lager", "gyümölcsös lager"],
+      "manufacturer": "Szent András Sörfőzde",
+      "consumption": "ivósör",
+      "price": 650,
+      "quality": 6.0,
+      "acquisition": ["online", "Interspar"],
+      "packformat": 0.5
+    },
+{
       "name": "HopTop Green Zone",
       "alcohol": 6.4,
       "taste": [ "könnyen iható", "közepesen keserű", "frissítő", "kicsit gyümölcsös", "komplex", "kellemes"],
@@ -28,7 +41,7 @@
 {
       "name": "Schwarzbier",
       "alcohol": 4.9,
-      "taste": ["Kellemes" ,"kicsit édes" , "kicsit karamellás" ," tömény íz" ],
+      "taste": ["kellemes" ,"kicsit édes" , "kicsit karamellás" ," tömény íz" ],
       "origin": "német",
       "type": ["lager", "barna lager"],
       "manufacturer": "Baden-Wüttenberg",
@@ -41,7 +54,7 @@
 {
       "name": "Ugar Hopjuliska",
       "alcohol": 6.0,
-      "taste": ["Kellemes" ,"nem keserű", "könnyen iható", "frissítő", "könnyed" ],
+      "taste": ["kellemes" ,"nem keserű", "könnyen iható", "frissítő", "könnyed" ],
       "origin": "magyar",
       "type": ["Ale", "APA"],
       "manufacturer": "Ugar Brewery",
