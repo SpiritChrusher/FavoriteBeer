@@ -13,6 +13,45 @@
       "packformat": 0.33
     },
 {
+      "name": "HopTop Green Zone",
+      "alcohol": 6.4,
+      "taste": [ "könnyen iható", "közepesen keserű", "frissítő", "kicsit gyümölcsös", "komplex", "kellemes"],
+      "origin": "magyar",
+      "type": ["Ale", "IPA", "Amerikai IPA"],
+      "manufacturer": "HopTop",
+      "consumption": "Félig Buzulós",
+      "price": 800,
+      "quality": 7.5,
+      "acquisition": ["online", "InterSpar", "Auchan"],
+      "packformat": 0.33
+    }, 
+{
+      "name": "Schwarzbier",
+      "alcohol": 4.9,
+      "taste": ["Kellemes" ,"kicsit édes" , "kicsit karamellás" ," tömény íz" ],
+      "origin": "német",
+      "type": ["lager", "barna lager"],
+      "manufacturer": "Baden-Wüttenberg",
+      "consumption": "félig Buzulós",
+      "price": 300,
+      "quality": 5.0,
+      "acquisition": ["Lidl"],
+      "packformat": 0.5
+    },
+{
+      "name": "Ugar Hopjuliska",
+      "alcohol": 6.0,
+      "taste": ["Kellemes" ,"nem keserű", "könnyen iható", "frissítő", "könnyed" ],
+      "origin": "magyar",
+      "type": ["Ale", "APA"],
+      "manufacturer": "Ugar Brewery",
+      "consumption": "ivósör",
+      "price": 800,
+      "quality": 6.5,
+      "acquisition": ["online"],
+      "packformat": 0.33
+    },
+{
       "name": "Horizont Rebel Berry",
       "alcohol": 4.5,
       "taste": ["savanyú", "nagyon gyümölcsös", "nem keserű" ],
