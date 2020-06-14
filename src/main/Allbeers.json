@@ -132,7 +132,7 @@
 	{
       "name": "Mead Scientist OGA",
       "alcohol": 7.0,
-      "taste": [ "Élmény, "keserű utóíz", "savanyú", "komplex", "cukros", "édes"],
+      "taste": [ "élmény", "keserű utóíz", "savanyú", "komplex", "cukros", "édes"],
       "origin": "magyar",
       "type": [ "mézsör"],
       "manufacturer": "Mad Scientist",
