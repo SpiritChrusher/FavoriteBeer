@@ -25,6 +25,19 @@
       "acquisition": ["online", "Interspar", "Tesco", "Auchan" ],
       "packformat": 0.5
     },
+	{
+      "name": "Ugar Stróman",
+      "alcohol": 6.5,
+      "taste": ["könnyed", "könnyen iható", "kicsit keserű", "gyümölcsös" ],
+      "origin": "magyar",
+      "type": ["Ale", "IPA", "New-England IPA"],
+      "manufacturer": "Ugar Brewery",
+      "consumption": "ivósör",
+      "price": 900,
+      "quality": 6.5,
+      "acquisition": ["online" ],
+      "packformat": 0.33
+    },
 {
       "name": "Fehér Nyúl Pineapple Express",
       "alcohol": 5.7,
