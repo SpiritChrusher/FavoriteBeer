@@ -25,45 +25,6 @@
       "acquisition": ["online", "Interspar", "Tesco", "Auchan" ],
       "packformat": 0.5
     },
-{
-      "name": "Ugar Stróman",
-      "alcohol": 6.5,
-      "taste": ["könnyed", "könnyen iható", "kicsit keserű", "gyümölcsös" ],
-      "origin": "magyar",
-      "type": ["Ale", "IPA", "New-England IPA"],
-      "manufacturer": "Ugar Brewery",
-      "consumption": "ivósör",
-      "price": 900,
-      "quality": 6.5,
-      "acquisition": ["online" ],
-      "packformat": 0.33
-    },
-{
-      "name": "Ugar Wonder Kompót",
-      "alcohol": 5.0,
-      "taste": [ "nem keserű", "gyümölcsös", "kicsit savanyú" ],
-      "origin": "magyar",
-      "type": ["Ale", "sour fruit ale"],
-      "manufacturer": "Ugar brewery ",
-      "consumption": "félig buzulós",
-      "price": 900,
-      "quality": 6.5,
-      "acquisition": ["online" ],
-      "packformat": 0.33
-    },
-{
-      "name": "Fehér Nyúl Pineapple Express",
-      "alcohol": 5.7,
-      "taste": ["könnyed", "könnyen iható", "édes", "nagyon gyümölcsös", "kicsit savanyú" ],
-      "origin": "magyar",
-      "type": ["Ale", "Milkshake Pale Ale"],
-      "manufacturer": "Fehér Nyúl",
-      "consumption": "ivósör",
-      "price": 900,
-      "quality": 6.0,
-      "acquisition": ["online" ],
-      "packformat": 0.33
-    },
   {
     "name": "Fehér Nyúl Queer Bunny",
     "alcohol": 5.2,
