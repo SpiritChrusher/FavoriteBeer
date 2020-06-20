@@ -1741,13 +1741,13 @@
       {
         "name": "Kőbányai",
         "alcohol": 4.3,
-        "taste": [ "Vízes", "savanyú", "nem erős", "disznotáp"],
+        "taste": [ "legjobb sör", "nagyon finom", "nem erős"],
         "origin": "magyar",
         "type": [ "Lager"],
         "manufacturer": "Dreher",
         "consumption": "ivósör",
         "price": 210,
-        "quality": 2.0,
+        "quality": 9.9,
         "acquisition": [ "Spar", "TESCO"],
         "packformat": 0.5
       },
