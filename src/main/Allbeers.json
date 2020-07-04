@@ -2014,13 +2014,13 @@
       {
         "name": "Mort Subite",
         "alcohol": 4.0,
-        "taste": [ "Nagyon meggyes", "közepesen édes"],
+        "taste": [ "Nagyon gyümölcsös", "közepesen édes", "nem keserű", "kellemes", "könnyed"],
         "origin": "Belga",
         "type": [ "ale", "Belga", "lambic", "gyümölcsös lambic"],
         "manufacturer": "Mort Subite Brewery",
         "consumption": "kortyolgatós",
         "price": 470,
-        "quality": 6.0,
+        "quality": 7.0,
         "acquisition": [ "TESCO", "InterSpar", "Spar"],
         "packformat": 0.5
       },
