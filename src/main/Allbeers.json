@@ -12,6 +12,19 @@
     "acquisition": [ "Stay", "Interspar"],
     "packformat": 0.5
   },
+	{
+    "name": "HB Münchner Weisse",
+    "alcohol": 5.1,
+    "taste": [ "kellemes", "könnyen iható", "definitív búzasör", "kicsit citrusos", "nem keserű"],
+    "origin": "német",
+    "type": [ "ale", "búzasör"],
+    "manufacturer": "Staatliches Hofbräuhaus in München",
+    "consumption": "ivósör",
+    "price": 410,
+    "quality": 6.0,
+    "acquisition": ["Auchan"],
+    "packformat": 0.33
+  },
   {
       "name": "Stella Artois",
       "alcohol": 5.0,
