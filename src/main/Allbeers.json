@@ -1,4 +1,17 @@
 [
+    {
+    "name": "Westmalle Trappist Dubbel",
+    "alcohol": 7.0,
+    "taste": [ "kellemes", "könnyen iható", "nincs lecsengése és utóíze", "enyhe dubbel"],
+    "origin": "belga",
+    "type": [ "ale", "belga", "dubbel],
+    "manufacturer": "Brouwerij der Trappisten van Westmalle",
+    "consumption": "félig kortyolgatós",
+    "price": 819,
+    "quality": 6.5,
+    "acquisition": [ "online"],
+    "packformat": 0.33
+  },
   {
     "name": "Erdinger SchneeweiSSe",
     "alcohol": 5.6,
