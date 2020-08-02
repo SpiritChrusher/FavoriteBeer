@@ -1,10 +1,36 @@
 [
+	{
+    "name": "Gulden Draak 9000 Quadruple",
+    "alcohol": 10.5,
+    "taste": [ "kellemes", "finom", "komplex", "nem keserű", "tömény"],
+    "origin": "belga",
+    "type": [ "ale", "belga", "quadrupel"],
+    "manufacturer": "Brouwerij Van Steenberge",
+    "consumption": "kortyolgatós",
+    "price": 1000,
+    "quality": 8.5,
+    "acquisition": ["online"],
+    "packformat": 0.33
+  },
+	{
+    "name": "La Trappe Quadrupel",
+    "alcohol": 10.0,
+    "taste": [ "kellemes", "finom", "komplex", "nem keserű"],
+    "origin": "belga",
+    "type": [ "ale", "belga", "quadrupel"],
+    "manufacturer": "Koningshoeven",
+    "consumption": "kortyolgatós",
+    "price": 910,
+    "quality": 8.0,
+    "acquisition": [ "online"],
+    "packformat": 0.33
+  },
     {
     "name": "Westmalle Trappist Dubbel",
     "alcohol": 7.0,
-    "taste": [ "kellemes", "könnyen iható", "nincs lecsengése és utóíze", "enyhe dubbel"],
+    "taste": [ "kellemes", "könnyen iható", "nincs lecsengése és utóíze", "enyhe dubbel", "nem keserű"],
     "origin": "belga",
-    "type": [ "ale", "belga", "dubbel],
+    "type": [ "ale", "belga", "dubbel"],
     "manufacturer": "Brouwerij der Trappisten van Westmalle",
     "consumption": "félig kortyolgatós",
     "price": 819,
