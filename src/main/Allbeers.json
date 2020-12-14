@@ -2395,7 +2395,7 @@
         "type": [ "ale", "Stout", "Imperial Stout", "Russian Imperial Stout"],
         "manufacturer": "Szent András",
         "consumption": "kortyolgatós",
-        "price": "1150",
+        "price": 1150,
         "quality": 9.0,
         "acquisition": [ "Stay", "Gedeon"],
         "packformat": 0.33
