@@ -1953,7 +1953,7 @@
         "type": [ "ale", "IPA", "West-Coast IPA"],
         "manufacturer": "Mad Scientist",
         "consumption": "kortyolgatós",
-        "price": "900",
+        "price": 900,
         "quality": 8.0,
         "acquisition": [ "Stay", "InterSpar", "Online"],
         "packformat": 0.44
@@ -1992,7 +1992,7 @@
         "type": [ "ale", "IPA", "Double IPA", "teás Double IPA"],
         "manufacturer": "HopTop",
         "consumption": "kortyolgatós",
-        "price": "900",
+        "price": 900,
         "quality": 9.0,
         "acquisition": [ "Stay", "Online", "InterSpar"],
         "packformat": 0.33
@@ -2083,7 +2083,7 @@
         "type": [ "ale", "Stout", "Imperial Stout", "Russian Imparial Stout"],
         "manufacturer": "Horizont",
         "consumption": "kortyolgatós",
-        "price": "1550",
+        "price": 1550,
         "quality": 9.0,
         "acquisition": [ "Stay", "Online"],
         "packformat": 0.33
