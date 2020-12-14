@@ -1059,7 +1059,7 @@
         "type": [ "Lager"],
         "manufacturer": "Borsodi",
         "consumption": "ivósör",
-        "price": "270",
+        "price": 270,
         "quality": 3.0,
         "acquisition": [ "Spar", "TESCO", "Lidl"],
         "packformat": 0.5
@@ -1075,7 +1075,6 @@
         "price": 600,
         "quality": 6.5,
         "acquisition": [ "InterSpar"],
-        "arertek": "6.5",
         "packformat": 0.5
       },
       {
