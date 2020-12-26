@@ -592,7 +592,7 @@
         "manufacturer": "Van Pur",
         "consumption": "Ivósör",
         "price": 230,
-        "quality": 4.9,
+        "quality": 4.0,
         "acquisition": ["Penny"],
         "packformat": 0.5
       },
@@ -1580,6 +1580,7 @@
         "manufacturer": "Privatbrauerei Eichbaum",
         "consumption": "félig ivósör",
         "price": 360,
+	"quality": 6.0,
         "acquisition": [ "InterSpar", "TESCO"],
         "packformat": 0.5
       },
