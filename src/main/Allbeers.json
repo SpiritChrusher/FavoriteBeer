@@ -1799,7 +1799,7 @@
         "manufacturer": "Dreher",
         "consumption": "ivósör",
         "price": 210,
-        "quality": 9.9,
+        "quality": 2.0,
         "acquisition": [ "Spar", "TESCO"],
         "packformat": 0.5
       },
@@ -2844,7 +2844,7 @@
         "packformat": 0.5
       },
       {
-        "name": "Kísérleti Nyúl Calm Storm",
+        "name": "Fehér Nyúl Calm Storm",
         "alcohol": 9.8,
         "taste": [ "kellemes", "kávés", "tömény", "kicsit édes", "kicsit csokis", "nem szénsavas"],
         "origin": "magyar",
