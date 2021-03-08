@@ -1,5 +1,31 @@
 [
 	{
+    "name": "Chimay Tripel",
+    "alcohol": 8.0,
+    "taste": [ "kellemes", "finom", "kicsit édes", "komplex", "nem keserű", "pezsgős"],
+    "origin": "belga",
+    "type": [ "ale", "belga", "tripel"],
+    "manufacturer": "Scourmont Abbey",
+    "consumption": "félig kortyolgatós",
+    "price": 980,
+    "quality": 8.0,
+    "acquisition": ["Auchan", "online"],
+    "packformat": 0.33
+  },
+	{
+    "name": "Chimay Rouge",
+    "alcohol": 7.0,
+    "taste": [ "kellemes", "finom", "kicsit karamelles", "nem keserű"],
+    "origin": "belga",
+    "type": [ "ale", "belga", "dubbel"],
+    "manufacturer": "Scourmont Abbey",
+    "consumption": "félig kortyolgatós",
+    "price": 870,
+    "quality": 7.5,
+    "acquisition": ["Auchan", "online"],
+    "packformat": 0.33
+  },
+	{
     "name": "Gulden Draak 9000 Quadruple",
     "alcohol": 10.5,
     "taste": [ "kellemes", "finom", "komplex", "nem keserű", "tömény"],
